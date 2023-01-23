@@ -54,11 +54,21 @@
     background: #000;
   }
 
+  @media (max-width: 800px) {
+    &-cards {
+      opacity: 1;
+    }
+  }
+
   @media (max-width: 500px){
     &-content {
       grid-template-columns: repeat(2, 2fr);
       max-width: 280px;
       margin: 0 auto;
+    }
+
+    &-cards {
+      opacity: 1;
     }
   }
 

@@ -145,12 +145,14 @@ btn.addEventListener("touchstart", toggleMenu);
 var scrollReveal = ScrollReveal({
   origin: "top",
   distance: "30px",
-  duration: 3000,
+  duration: 2000,
   reset: true
 });
 scrollReveal.reveal("#home, #about, #skills, #projects\n  ", {
   interval: 100
 });
+},{}],"javascript/verMais.js":[function(require,module,exports) {
+
 },{}],"javascript/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -159,7 +161,9 @@ require("./textauto");
 require("./menumobile");
 
 require("./scrollReveal");
-},{"./textauto":"javascript/textauto.js","./menumobile":"javascript/menumobile.js","./scrollReveal":"javascript/scrollReveal.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+
+require("./verMais");
+},{"./textauto":"javascript/textauto.js","./menumobile":"javascript/menumobile.js","./scrollReveal":"javascript/scrollReveal.js","./verMais":"javascript/verMais.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -265,7 +269,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58975" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60652" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

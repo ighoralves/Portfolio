@@ -10,7 +10,7 @@
   }
 
   &-text {
-    width: 300px;
+    width: 400px;
     // padding: 5px 5px;
     color: #fff;
     display: flex;
@@ -18,8 +18,8 @@
     gap: 15px;
 
     .text1 {
-      font-size: 25px;
-      font-weight: 600;
+      font-size: 35px;
+      font-weight: 400;
     }
   }
 
@@ -31,7 +31,7 @@
     figure {
       padding: 5px 10px;
       background: #fff;
-      width: 50px;
+      width: 30px;
       border-radius: 8px;
     }
   }
