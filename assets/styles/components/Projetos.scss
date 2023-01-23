@@ -1,0 +1,79 @@
+.Projetos {
+  position: relative;
+  top: 550px;
+
+  &-title {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 80px;
+  }
+
+  &-cards {
+    
+    width: 400px;
+    padding: 10px 10px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  &-card {
+    display: block;
+    width: 400px;
+    height: 300px;
+    background: red;
+  }
+
+  &-text1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &-text2 {
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &-text3 {
+    color: #00d2df;
+  }
+
+  &-bts {
+    margin: 0 auto;
+    display: flex;
+    width: 110px;
+    padding: 5px 8px;
+    color: #000;
+    gap: 5px;
+    text-transform: capitalize;
+    // font-weight: 600;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #00d2df;
+    // padding: 10px 50px;
+
+    .image1 {
+      width: 40px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    &-content {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0 auto;
+      width: 400px;
+    }
+  }
+}

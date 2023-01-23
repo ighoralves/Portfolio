@@ -145,10 +145,10 @@ btn.addEventListener("touchstart", toggleMenu);
 var scrollReveal = ScrollReveal({
   origin: "top",
   distance: "30px",
-  duration: 700,
+  duration: 3000,
   reset: true
 });
-scrollReveal.reveal(".Header, .Inicio, .Sobre, .Habilidades\n  ", {
+scrollReveal.reveal("#home, #about, #skills, #projects\n  ", {
   interval: 100
 });
 },{}],"javascript/index.js":[function(require,module,exports) {
@@ -265,7 +265,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63222" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53432" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

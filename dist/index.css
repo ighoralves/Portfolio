@@ -147,6 +147,10 @@ table {
   padding: 0 16px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background: #000;
@@ -154,7 +158,7 @@ body {
 
 .Linha {
   border-bottom: 1px solid rgba(255, 255, 155, 0.05);
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .Header {
@@ -469,6 +473,73 @@ body {
     grid-template-columns: repeat(2, 2fr);
     max-width: 280px;
     margin: 0 auto;
+  }
+}
+
+.Projetos {
+  position: relative;
+  top: 550px;
+}
+.Projetos-title {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 80px;
+}
+.Projetos-cards {
+  width: 400px;
+  padding: 10px 10px;
+  text-align: center;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.Projetos-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.Projetos-card {
+  display: block;
+  width: 400px;
+  height: 300px;
+  background: red;
+}
+.Projetos-text1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.Projetos-text2 {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+}
+.Projetos-text3 {
+  color: #00d2df;
+}
+.Projetos-bts {
+  margin: 0 auto;
+  display: flex;
+  width: 110px;
+  padding: 5px 8px;
+  color: #000;
+  gap: 5px;
+  text-transform: capitalize;
+  align-items: center;
+  background: #fff;
+  border: 2px solid #00d2df;
+}
+.Projetos-bts .image1 {
+  width: 40px;
+}
+@media (max-width: 800px) {
+  .Projetos-content {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    width: 400px;
   }
 }
 

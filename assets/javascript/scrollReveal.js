@@ -1,12 +1,12 @@
 const scrollReveal = ScrollReveal({
   origin: "top",
   distance: "30px",
-  duration: 700,
+  duration: 3000,
   reset: true,
 });
 
 scrollReveal.reveal(
-  `.Header, .Inicio, .Sobre, .Habilidades
+  `#home, #about, #skills, #projects
   `,
   { interval: 100 }
 );
