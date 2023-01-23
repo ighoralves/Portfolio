@@ -441,6 +441,7 @@ body {
   grid-template-columns: repeat(3, 2fr);
 }
 .Habilidades-cards {
+  border: 2px solid #30363d;
   padding: 5px 10px;
   background: #fff;
   width: 100px;
@@ -489,8 +490,11 @@ body {
   margin-bottom: 80px;
 }
 .Projetos-cards {
+  border: 1px solid #30363d;
+  background: #0d1117;
+  border-radius: 20px;
   width: 400px;
-  padding: 10px 10px;
+  padding: 15px 15px;
   text-align: center;
   display: flex;
   gap: 20px;
@@ -513,7 +517,7 @@ body {
   font-weight: 600;
 }
 .Projetos-text2 {
-  color: #fff;
+  color: #8b949e;
   font-size: 18px;
   line-height: 24px;
 }
@@ -524,16 +528,17 @@ body {
   margin: 0 auto;
   display: flex;
   width: 110px;
-  padding: 5px 8px;
-  color: #000;
-  gap: 5px;
+  padding: 8px 15px;
+  color: #ddd;
+  gap: 10px;
   text-transform: capitalize;
   align-items: center;
-  background: #fff;
-  border: 2px solid #00d2df;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 8px;
 }
 .Projetos-bts .image1 {
-  width: 40px;
+  width: 30px;
 }
 @media (max-width: 800px) {
   .Projetos-content {
