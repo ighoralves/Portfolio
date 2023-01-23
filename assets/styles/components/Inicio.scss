@@ -53,6 +53,8 @@
     }
   }
 
+  
+
   @media (max-width: 500px) {
 
     &-text {
@@ -61,6 +63,10 @@
 
     &-bts {
       justify-content: center;
+
+      figure {
+        width: 30px;
+      }
     }
   }
 

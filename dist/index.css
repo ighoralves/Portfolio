@@ -156,6 +156,11 @@ body {
   background: #000;
 }
 
+.Linha {
+  border-bottom: 1px solid rgba(255, 255, 155, 0.05);
+  margin-top: 50px;
+}
+
 .Header {
   width: 100%;
   top: 0;
@@ -328,6 +333,9 @@ body {
   .Inicio-bts {
     justify-content: center;
   }
+  .Inicio-bts figure {
+    width: 30px;
+  }
 }
 @media (max-width: 800px) {
   .Inicio {
@@ -355,6 +363,57 @@ body {
   }
   50% {
     opacity: 0;
+  }
+}
+
+.Sobre {
+  position: relative;
+  top: 300px;
+}
+.Sobre-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.Sobre-title1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.Sobre-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.Sobre-content figure {
+  width: 300px;
+}
+.Sobre-texts {
+  color: #fff;
+  width: 500px;
+  font-size: 22px;
+  line-height: 28px;
+}
+.Sobre-texts .Text1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+@media (max-width: 800px) {
+  .Sobre-texts {
+    width: 400px;
+    font-size: 20px;
+  }
+  .Sobre-texts .Text1 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 500px) {
+  .Sobre {
+    top: 200px;
+  }
+  .Sobre-content {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
