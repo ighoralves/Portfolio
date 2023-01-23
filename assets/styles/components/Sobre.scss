@@ -53,6 +53,11 @@
     &-content {
       flex-direction: column;
       text-align: center;
+
+    }
+
+    &-texts {
+      max-width: 100%;
     }
   }
 }

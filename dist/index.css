@@ -147,10 +147,6 @@ table {
   padding: 0 16px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   background: #000;
@@ -220,6 +216,7 @@ body {
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(13.5px);
     -webkit-backdrop-filter: blur(13.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 8px 0 0 8px;
     transition: 0.6s;
     overflow-y: hidden;
@@ -415,11 +412,64 @@ body {
     flex-direction: column;
     text-align: center;
   }
+  .Sobre-texts {
+    max-width: 100%;
+  }
 }
 
 .Habilidades {
   position: relative;
-  top: 300px;
+  top: 400px;
+}
+.Habilidades-title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.Habilidades-content {
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+}
+.Habilidades-cards {
+  padding: 5px 10px;
+  background: #fff;
+  width: 100px;
+  border-radius: 8px;
+  opacity: 0.3;
+  cursor: pointer;
+  overflow: hidden;
+}
+.Habilidades-cards:hover {
+  opacity: 1;
+  transition: 0.6s;
+  transform: scale(1.1);
+}
+.Habilidades .ShowHidden {
+  position: relative;
+  top: 60px;
+  right: 55px;
+  color: #fff;
+  text-align: center;
+  rotate: 309deg;
+  font-size: 18px;
+  font-weight: 600xx;
+  text-transform: capitalize;
+  width: 200px;
+  padding: 5px;
+  background: #000;
+}
+@media (max-width: 500px) {
+  .Habilidades-content {
+    grid-template-columns: repeat(2, 2fr);
+    max-width: 280px;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

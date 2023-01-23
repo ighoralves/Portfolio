@@ -1,4 +1,64 @@
 .Habilidades {
   position: relative;
-  top: 300px;
+  top: 400px;
+
+  &-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  &-content {
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    
+
+  }
+
+  &-cards {
+    padding: 5px 10px;
+    background: #fff;
+    width: 100px;
+    border-radius: 8px;
+    opacity: .3;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+      opacity: 1;
+      transition: .6s;
+      transform: scale(1.1);
+    }
+  }
+
+  .ShowHidden {
+    position: relative;
+    top: 60px;
+    right: 55px;
+    color: #fff;
+    text-align: center;
+    rotate: 309deg;
+    font-size: 18px;
+    font-weight: 600xx;
+    text-transform: capitalize;
+    width: 200px;
+    padding: 5px;
+
+    background: #000;
+  }
+
+  @media (max-width: 500px){
+    &-content {
+      grid-template-columns: repeat(2, 2fr);
+      max-width: 280px;
+      margin: 0 auto;
+    }
+  }
+
 }
