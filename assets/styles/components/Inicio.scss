@@ -1,0 +1,77 @@
+.Inicio {
+  position: relative;
+  top: 150px;
+  
+
+  &-cotent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-text {
+    width: 300px;
+    // padding: 5px 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .text1 {
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+
+  &-bts {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+
+    figure {
+      padding: 5px 10px;
+      background: #fff;
+      width: 50px;
+      border-radius: 8px;
+    }
+  }
+
+  &-image {
+    max-width: 400px;
+    position: relative;
+    animation: imgAnimacao 2.1s infinite alternate-reverse linear;
+
+  }
+
+  @keyframes imgAnimacao {
+    from {
+      top: -15px;
+    }
+
+    to {
+      top: 25px;
+    }
+  }
+
+  @media (max-width: 500px) {
+
+    &-text {
+      text-align: center;
+    }
+
+    &-bts {
+      justify-content: center;
+    }
+  }
+
+
+  @media (max-width: 800px) {
+    top: 120px;
+
+    &-cotent {
+      flex-direction: column-reverse;
+      gap: 30px;
+    }
+  }
+  
+}
