@@ -372,7 +372,7 @@ body {
 }
 .Sobre-title {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 .Sobre-title1 {
   color: #fff;
@@ -400,14 +400,14 @@ body {
 }
 @media (max-width: 800px) {
   .Sobre-texts {
-    width: 400px;
+    max-width: 400px;
     font-size: 20px;
   }
   .Sobre-texts .Text1 {
     font-size: 26px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 780px) {
   .Sobre {
     top: 200px;
   }
@@ -415,6 +415,11 @@ body {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.Habilidades {
+  position: relative;
+  top: 300px;
 }
 
 /*# sourceMappingURL=index.css.map */

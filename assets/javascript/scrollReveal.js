@@ -6,7 +6,7 @@ const scrollReveal = ScrollReveal({
 });
 
 scrollReveal.reveal(
-  `.Header, .Inicio, .Sobre, h1, h2, h3, p
+  `.Header, .Inicio, .Sobre
   `,
   { interval: 100 }
 );
