@@ -1,7 +1,7 @@
 //box-shadow: 0px 0px 12px #00000014;
 
 $--base-color: #6AB99D;
-$--base-color-second: #00000014; 
+$--base-color-second: #03030371; 
 $--title-color: #0f241d;
 $--text-color: #757575;
 $--text-color-light: #fafafa;
@@ -25,10 +25,20 @@ html {
 body {
   font-family: $--body-font;
   background: $--body-color;
+  -webkit-font-smoothing: antialiased;
   
 }
 
 .Linha {
   border-bottom: 1px solid $--base-color;
-  margin-top: 150px;
+  position: relative;
+  top: 100px;
+}
+.Linha1 {
+  border-bottom: 1px solid $--base-color;
+  position: relative;
+}
+.Linha2 {
+  border-bottom: 1px solid $--base-color;
+  position: relative;
 }

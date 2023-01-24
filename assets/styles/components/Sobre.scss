@@ -1,6 +1,8 @@
 .Sobre {
-  position: relative;
-  top: 300px;
+  background: #fff;
+  position:relative;
+  top: 100px;
+  padding: 100px 0;
 
   &-title {
     text-align: center;
@@ -8,7 +10,7 @@
   }
 
   &-title1 {
-    color: #fff;
+    color: $--title-color;
     font-size: 40px;
     font-weight: 600;
     text-transform: capitalize;
@@ -20,14 +22,16 @@
     gap: 50px;
 
     figure {
-      width: 300px;
+      background: $--base-color;
+      width: 20%;
+      border-radius: 10px 40px 10px 8px;
       
     }
   }
   
   &-texts {
-    color: #fff;
-    width: 500px;
+    color: $--text-color;
+    max-width: 800px;
     font-size: 22px;
     line-height: 28px;
 

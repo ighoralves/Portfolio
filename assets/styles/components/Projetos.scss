@@ -1,9 +1,11 @@
 .Projetos {
   position: relative;
-  top: 550px;
+  top: 100px;
+  padding: 100px 0;
+  background: #fff;
 
   &-title {
-    color: #fff;
+    color: $--title-color;
     text-align: center;
     font-size: 40px;
     font-weight: 600;
@@ -12,17 +14,19 @@
   }
 
   &-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+    // background: blue;
   }
 
   &-cards {
-    border: 1px solid #30363d;
-    background: #0d1117;
+    box-shadow: 0px 0px 12px $--base-color-second;
+    background: #fff;
     border-radius: 20px;
-    max-width: 400px;
-    padding: 25px 25px;
+    max-width: 355px;
+    padding: 16px 8px;
     text-align: center;
     display: flex;
     gap: 20px;
@@ -32,26 +36,13 @@
 
   &-card {
     display: block;
-    max-width: 400px;
-    height: 300px;
+    max-width: 350px;
+    height: 200px;
     background: red;
   }
 
-  &-text1 {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-  }
-
-  &-text2 {
-    max-width: 100%;
-    color: #8b949e;
-    font-size: 18px;
-    line-height: 24px;
-  }
-
   &-text3 {
-    color: #00d2df;
+    color: $--text-color;
     max-width: 100%;
   }
 
@@ -60,12 +51,11 @@
     display: flex;
     width: 110px;
     padding: 8px 15px;
-    color: #ddd;
+    color: #fff;
     gap: 10px;
     text-transform: capitalize;
     align-items: center;
-    background: #0d1117;
-    border: 1px solid #30363d;
+    background: $--base-color;
     border-radius: 8px;
 
     .image1 {
@@ -94,13 +84,17 @@
 
   @media (max-width: 800px) {
     &-content {
-      grid-template-columns: repeat(1, 1fr);
-      margin: 0 auto;
-      max-width: 400px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
+    &-content {
+      display: flex;
+      flex-direction: column;
+    }
+
     &-cards {
       max-width: 270px;
       margin: 0 auto;

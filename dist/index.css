@@ -154,11 +154,23 @@ html {
 body {
   font-family: "DM sans", sans-serif;
   background: #fafafa;
+  -webkit-font-smoothing: antialiased;
 }
 
 .Linha {
   border-bottom: 1px solid #6AB99D;
-  margin-top: 150px;
+  position: relative;
+  top: 100px;
+}
+
+.Linha1 {
+  border-bottom: 1px solid #6AB99D;
+  position: relative;
+}
+
+.Linha2 {
+  border-bottom: 1px solid #6AB99D;
+  position: relative;
 }
 
 .Header {
@@ -286,7 +298,7 @@ body {
   max-width: 100%;
   height: 100%;
   position: relative;
-  top: 100px;
+  top: 73px;
 }
 .Inicio-cotent {
   max-width: 100%;
@@ -377,15 +389,17 @@ body {
 }
 
 .Sobre {
+  background: #fff;
   position: relative;
-  top: 300px;
+  top: 100px;
+  padding: 100px 0;
 }
 .Sobre-title {
   text-align: center;
   margin-bottom: 80px;
 }
 .Sobre-title1 {
-  color: #fff;
+  color: #0f241d;
   font-size: 40px;
   font-weight: 600;
   text-transform: capitalize;
@@ -396,11 +410,13 @@ body {
   gap: 50px;
 }
 .Sobre-content figure {
-  width: 300px;
+  background: #6AB99D;
+  width: 20%;
+  border-radius: 10px 40px 10px 8px;
 }
 .Sobre-texts {
-  color: #fff;
-  width: 500px;
+  color: #757575;
+  max-width: 800px;
   font-size: 22px;
   line-height: 28px;
 }
@@ -432,30 +448,32 @@ body {
 
 .Habilidades {
   position: relative;
-  top: 400px;
+  top: 130px;
+  padding: 100px 0;
 }
 .Habilidades-title {
-  color: #fff;
+  color: #0f241d;
   text-align: center;
   margin-bottom: 80px;
   font-size: 50px;
   font-weight: 600;
   text-transform: capitalize;
+  -webkit-font-smoothing: auto;
 }
 .Habilidades-content {
-  width: 500px;
+  max-width: 500px;
   margin: 0 auto;
-  gap: 40px;
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: repeat(4, 2fr);
+  gap: 20px;
 }
 .Habilidades-cards {
-  border: 2px solid #30363d;
   padding: 5px 10px;
   background: #fff;
+  box-shadow: 0px 0px 12px rgba(3, 3, 3, 0.4431372549);
   width: 100px;
   border-radius: 8px;
-  opacity: 0.3;
+  opacity: 0.8;
   cursor: pointer;
   overflow: hidden;
 }
@@ -472,7 +490,7 @@ body {
   text-align: center;
   rotate: 309deg;
   font-size: 18px;
-  font-weight: 600xx;
+  font-weight: 600;
   text-transform: capitalize;
   width: 200px;
   padding: 5px;
@@ -498,10 +516,12 @@ body {
 
 .Projetos {
   position: relative;
-  top: 550px;
+  top: 100px;
+  padding: 100px 0;
+  background: #fff;
 }
 .Projetos-title {
-  color: #fff;
+  color: #0f241d;
   text-align: center;
   font-size: 40px;
   font-weight: 600;
@@ -509,16 +529,16 @@ body {
   margin-bottom: 80px;
 }
 .Projetos-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 .Projetos-cards {
-  border: 1px solid #30363d;
-  background: #0d1117;
+  box-shadow: 0px 0px 12px rgba(3, 3, 3, 0.4431372549);
+  background: #fff;
   border-radius: 20px;
-  max-width: 400px;
-  padding: 25px 25px;
+  max-width: 355px;
+  padding: 16px 8px;
   text-align: center;
   display: flex;
   gap: 20px;
@@ -526,23 +546,12 @@ body {
 }
 .Projetos-card {
   display: block;
-  max-width: 400px;
-  height: 300px;
+  max-width: 350px;
+  height: 200px;
   background: red;
 }
-.Projetos-text1 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-}
-.Projetos-text2 {
-  max-width: 100%;
-  color: #8b949e;
-  font-size: 18px;
-  line-height: 24px;
-}
 .Projetos-text3 {
-  color: #00d2df;
+  color: #757575;
   max-width: 100%;
 }
 .Projetos-bts {
@@ -550,12 +559,11 @@ body {
   display: flex;
   width: 110px;
   padding: 8px 15px;
-  color: #ddd;
+  color: #fff;
   gap: 10px;
   text-transform: capitalize;
   align-items: center;
-  background: #0d1117;
-  border: 1px solid #30363d;
+  background: #6AB99D;
   border-radius: 8px;
 }
 .Projetos-bts .image1 {
@@ -577,12 +585,15 @@ body {
 }
 @media (max-width: 800px) {
   .Projetos-content {
-    grid-template-columns: repeat(1, 1fr);
-    margin: 0 auto;
-    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .Projetos-content {
+    display: flex;
+    flex-direction: column;
+  }
   .Projetos-cards {
     max-width: 270px;
     margin: 0 auto;
@@ -597,7 +608,7 @@ body {
   max-width: 100%;
   height: 100%;
   position: relative;
-  top: 700px;
+  top: 150px;
   border-top: 1px solid #30363d;
   background: #0d1117;
 }
