@@ -501,7 +501,7 @@ body {
     opacity: 1;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .Habilidades-content {
     grid-template-columns: repeat(3, 1fr);
     max-width: 300px;
@@ -609,8 +609,7 @@ body {
   height: 100%;
   position: relative;
   top: 150px;
-  border-top: 1px solid #30363d;
-  background: #0d1117;
+  background: #6AB99D;
 }
 .Footer-content {
   display: flex;
@@ -625,8 +624,6 @@ body {
 }
 .Footer-icons .icon2 {
   width: 30px;
-  padding: 5px 8px;
-  background: #fff;
   border-radius: 8px;
 }
 @media (max-width: 500px) {

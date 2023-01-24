@@ -3,8 +3,7 @@
   height: 100%;
   position: relative;
   top: 150px;
-  border-top: 1px solid #30363d;
-  background: #0d1117;
+  background: $--base-color;
 
   &-content {
     display: flex;
@@ -23,8 +22,7 @@
     
     .icon2{
       width: 30px;
-      padding: 5px 8px;
-      background: #fff;
+      // background: #fff;
       border-radius: 8px;
     }
   }

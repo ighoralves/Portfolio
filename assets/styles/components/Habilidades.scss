@@ -62,7 +62,7 @@
     }
   }
 
-  @media (max-width: 500px){
+  @media (max-width: 600px){
     &-content {
       grid-template-columns: repeat(3, 1fr);
       max-width: 300px;
