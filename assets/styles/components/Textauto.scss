@@ -23,5 +23,12 @@
       opacity: 0;
     }
   }
+
+  @media (max-width: 500px) {
+    .autotext {
+      font-size: 40px;
+      letter-spacing: 1px;
+    }
+  }
   
 }

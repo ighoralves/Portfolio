@@ -12,7 +12,7 @@
   }
 
   &-content {
-    max-width: 500px;
+    width: 500px;
     margin: 0 auto;
     gap: 40px;
     display: grid;
@@ -62,13 +62,15 @@
 
   @media (max-width: 500px){
     &-content {
-      grid-template-columns: repeat(2, 2fr);
-      max-width: 280px;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 300px;
       margin: 0 auto;
+      gap: 10px;
     }
 
     &-cards {
       opacity: 1;
+      width: 75px;
     }
   }
 

@@ -142,9 +142,9 @@ table {
 }
 
 .Container {
-  max-width: 900px;
+  max-width: 970px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 20px;
 }
 
 html {
@@ -287,14 +287,14 @@ body {
   justify-content: space-between;
 }
 .Inicio-text {
-  width: 400px;
+  max-width: 400px;
   color: #fff;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 .Inicio-text .text1 {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 400;
 }
 .Inicio-bts {
@@ -359,6 +359,12 @@ body {
   }
   50% {
     opacity: 0;
+  }
+}
+@media (max-width: 500px) {
+  .Inicio .autotext {
+    font-size: 40px;
+    letter-spacing: 1px;
   }
 }
 
@@ -429,7 +435,7 @@ body {
   text-transform: capitalize;
 }
 .Habilidades-content {
-  max-width: 500px;
+  width: 500px;
   margin: 0 auto;
   gap: 40px;
   display: grid;
@@ -471,12 +477,14 @@ body {
 }
 @media (max-width: 500px) {
   .Habilidades-content {
-    grid-template-columns: repeat(2, 2fr);
-    max-width: 280px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 300px;
     margin: 0 auto;
+    gap: 10px;
   }
   .Habilidades-cards {
     opacity: 1;
+    width: 75px;
   }
 }
 
@@ -501,7 +509,7 @@ body {
   border: 1px solid #30363d;
   background: #0d1117;
   border-radius: 20px;
-  width: 400px;
+  max-width: 400px;
   padding: 25px 25px;
   text-align: center;
   display: flex;
@@ -510,7 +518,7 @@ body {
 }
 .Projetos-card {
   display: block;
-  width: 400px;
+  max-width: 400px;
   height: 300px;
   background: red;
 }
@@ -545,8 +553,12 @@ body {
 .Projetos-bts .image1 {
   width: 30px;
 }
-.Projetos #showOrHide {
+.Projetos-btn3 {
   width: 150px;
+  text-align: center;
+  margin: 0 auto;
+}
+.Projetos #showOrHide {
   padding: 15px 25px;
   background: #0d1117;
   border: 1px solid #30363d;
@@ -554,28 +566,28 @@ body {
   border-radius: 8px;
   font-size: 16px;
   margin-top: 20px;
-  display: flex;
 }
 @media (max-width: 800px) {
   .Projetos-content {
     grid-template-columns: repeat(1, 1fr);
     margin: 0 auto;
-    width: 400px;
+    max-width: 400px;
   }
 }
 @media (max-width: 500px) {
   .Projetos-cards {
-    width: 300px;
+    max-width: 270px;
     margin: 0 auto;
   }
   .Projetos-card {
-    width: 300px;
+    max-width: 270px;
     height: 250px;
   }
 }
 
 .Footer {
-  height: 80px;
+  max-width: 100%;
+  height: 100%;
   position: relative;
   top: 700px;
   border-top: 1px solid #30363d;
