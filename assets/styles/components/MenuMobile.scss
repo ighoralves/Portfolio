@@ -7,7 +7,6 @@
   #menu {
 
     a {
-      color: #fff;
       text-decoration: none;
     }
   }
@@ -24,24 +23,25 @@
       right: 0;
       padding: 20px 0;
       gap: 30px;
-
-      background: #0d1117;
-      border: 1px solid #30363d;
       border-radius: 8px 0 0 8px;
-
+      background: $--base-color;
       transition: .6s;
       overflow-y: hidden;
       visibility: hidden;
       z-index: 1000;
 
       a {
-        border-bottom: 1px solid rgba(0, 0, 0, .05);
-        color: #fff;
+        border-bottom: 1px solid $--body-color;
+        color: $--body-color;
         display: flex;
         font-size: 22px;
         padding: 16px 0;
         margin: 0 16px;
         text-transform: capitalize;
+
+        &:hover {
+          color: $--body-color;
+        }
       }
 
       .icon-1 {
@@ -69,7 +69,7 @@
     }
 
     #hamburguer {
-      color: #fff;
+      color: $--base-color;
       border-top: 2px solid;
       width: 20px;
 

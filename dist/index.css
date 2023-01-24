@@ -142,9 +142,9 @@ table {
 }
 
 .Container {
-  max-width: 970px;
+  max-width: 1070px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 16px;
 }
 
 html {
@@ -152,22 +152,22 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background: #363636;
+  font-family: "DM sans", sans-serif;
+  background: #fafafa;
 }
 
 .Linha {
-  border-bottom: 1px solid rgba(255, 255, 155, 0.05);
-  margin-top: 100px;
+  border-bottom: 1px solid #6AB99D;
+  margin-top: 150px;
 }
 
 .Header {
+  background: #fafafa;
+  border-bottom: 1px solid #6AB99D;
   width: 100%;
   top: 0;
   position: fixed;
   padding: 25px 0;
-  background: #0d1117;
-  border-bottom: 1px solid #30363d;
   z-index: 999;
 }
 .Header .Container {
@@ -178,8 +178,12 @@ body {
 }
 .Header-logo a {
   text-decoration: none;
-  color: #fff;
+  color: #0f241d;
   font-size: 22px;
+  font-weight: 600;
+}
+.Header-logo a span {
+  color: #6AB99D;
 }
 .Header #menu {
   display: flex;
@@ -187,20 +191,19 @@ body {
   gap: 20px;
 }
 .Header #menu a {
+  color: #0f241d;
   font-size: 18px;
   text-transform: capitalize;
 }
 .Header #menu a:hover {
-  border-bottom: 1px solid rgb(255, 187, 0);
-  transition: 1s;
-  color: rgb(255, 187, 0);
+  color: #6AB99D;
+  border-bottom: 1px solid #6AB99D;
 }
 
 .Header #btn-mobile {
   display: none;
 }
 .Header #menu a {
-  color: #fff;
   text-decoration: none;
 }
 @media (max-width: 800px) {
@@ -213,22 +216,24 @@ body {
     right: 0;
     padding: 20px 0;
     gap: 30px;
-    background: #0d1117;
-    border: 1px solid #30363d;
     border-radius: 8px 0 0 8px;
+    background: #6AB99D;
     transition: 0.6s;
     overflow-y: hidden;
     visibility: hidden;
     z-index: 1000;
   }
   .Header #menu a {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    color: #fff;
+    border-bottom: 1px solid #fafafa;
+    color: #fafafa;
     display: flex;
     font-size: 22px;
     padding: 16px 0;
     margin: 0 16px;
     text-transform: capitalize;
+  }
+  .Header #menu a:hover {
+    color: #fafafa;
   }
   .Header #menu .icon-1 {
     display: flex;
@@ -251,7 +256,7 @@ body {
     gap: 8px;
   }
   .Header #hamburguer {
-    color: #fff;
+    color: #6AB99D;
     border-top: 2px solid;
     width: 20px;
   }
@@ -278,23 +283,26 @@ body {
 }
 
 .Inicio {
+  max-width: 100%;
+  height: 100%;
   position: relative;
-  top: 150px;
+  top: 100px;
 }
 .Inicio-cotent {
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .Inicio-text {
-  max-width: 400px;
-  color: #fff;
+  max-width: 100%;
+  color: #0f241d;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 .Inicio-text .text1 {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 400;
 }
 .Inicio-bts {
@@ -303,13 +311,14 @@ body {
   margin-top: 5px;
 }
 .Inicio-bts figure {
-  padding: 5px 10px;
-  background: #fff;
-  width: 30px;
-  border-radius: 8px;
+  width: 25px;
 }
 .Inicio-image {
-  max-width: 400px;
+  background: #6AB99D;
+  border-radius: 50%;
+  padding: -2px;
+  width: 50%;
+  top: 100px;
   position: relative;
   animation: imgAnimacao 2.1s infinite alternate-reverse linear;
 }
@@ -318,7 +327,7 @@ body {
     top: -15px;
   }
   to {
-    top: 25px;
+    top: 5px;
   }
 }
 @media (max-width: 500px) {
@@ -343,9 +352,8 @@ body {
 }
 
 .Inicio .autotext {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 600;
-  letter-spacing: 3px;
 }
 .Inicio .autotext::after {
   content: "|";
