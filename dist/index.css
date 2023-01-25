@@ -178,23 +178,22 @@ a {
   .Linha {
     border-bottom: 1px solid #6AB99D;
     position: relative;
-    top: 200px;
+    top: 100px;
   }
 }
 .Header {
   background: #485460;
   border-bottom: 1px solid #6AB99D;
+  padding: 28px 0;
   width: 100%;
-  top: 0;
   position: fixed;
-  padding: 25px 0;
+  top: 0px;
   z-index: 999;
 }
 .Header .Container {
   display: flex;
-  align-items: center;
+  margin-top: 20px;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .Header-logo a {
   text-decoration: none;
@@ -232,7 +231,7 @@ a {
     position: absolute;
     width: 45%;
     height: 0;
-    top: 83px;
+    top: 110px;
     right: 0;
     padding: 20px 0;
     gap: 30px;
@@ -343,9 +342,8 @@ a {
   border-radius: 50%;
   padding: -2px;
   width: 50%;
-  top: 100px;
-  position: relative;
-  animation: imgAnimacao 2.1s infinite alternate-reverse linear;
+  -webkit-animation: roll-in-left 0.6s ease-out both;
+  animation: roll-in-left 0.6s ease-out both;
 }
 @keyframes imgAnimacao {
   from {
@@ -357,7 +355,7 @@ a {
 }
 @media (max-width: 500px) {
   .Inicio {
-    padding: 50px 0;
+    padding: 100px 0;
   }
   .Inicio-text {
     text-align: center;
@@ -370,9 +368,9 @@ a {
     width: 30px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .Inicio {
-    top: 120px;
+    top: 100px;
   }
   .Inicio-text {
     text-align: center;
@@ -438,10 +436,12 @@ a {
   background: #6AB99D;
   width: 20%;
   border-radius: 10px 40px 10px 8px;
+  -webkit-animation: roll-in-left 0.6s ease-out both;
+  animation: roll-in-left 0.6s ease-out both;
 }
 .Sobre-texts {
   color: #fafafa;
-  max-width: 800px;
+  max-width: 700px;
   font-size: 22px;
   line-height: 28px;
 }
@@ -449,18 +449,48 @@ a {
   margin-bottom: 30px;
   font-size: 30px;
 }
-@media (max-width: 800px) {
+@-webkit-keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@media (max-width: 900px) {
   .Sobre-texts {
-    max-width: 400px;
+    max-width: 500px;
     font-size: 20px;
   }
   .Sobre-texts .Text1 {
     font-size: 26px;
   }
 }
+@media (max-width: 800px) {
+  .Sobre-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 @media (max-width: 600px) {
   .Sobre {
-    top: 200px;
+    top: 100px;
   }
   .Sobre-content {
     flex-direction: column;
@@ -473,7 +503,6 @@ a {
     max-width: 100%;
   }
 }
-
 .Habilidades {
   background: rgba(3, 3, 3, 0.4431372549);
   position: relative;
@@ -531,18 +560,29 @@ a {
   }
 }
 @media (max-width: 600px) {
-  .Habilidades {
-    margin-top: 100px;
-  }
   .Habilidades-content {
     grid-template-columns: repeat(3, 1fr);
     max-width: 300px;
     margin: 0 auto;
-    gap: 10px;
+    gap: 20px;
   }
   .Habilidades-cards {
     opacity: 1;
     width: 75px;
+  }
+  .Habilidades .ShowHidden {
+    position: relative;
+    top: 40px;
+    right: 55px;
+    color: #fff;
+    text-align: center;
+    rotate: 309deg;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    width: 190px;
+    padding: 5px;
+    background: #000;
   }
 }
 
@@ -651,7 +691,7 @@ a {
   height: 100%;
   position: relative;
   top: 100px;
-  background: #6AB99D;
+  background: rgba(3, 3, 3, 0.4431372549);
 }
 .Footer-content {
   display: flex;

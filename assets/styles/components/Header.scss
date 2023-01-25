@@ -1,18 +1,18 @@
 .Header {
   background: $--body-color;
   border-bottom: 1px solid $--base-color;
+  
+  padding: 28px 0;
   width: 100%;
-  top: 0;
   position: fixed;
-  padding: 25px 0;
+  top: 0px;
   z-index: 999;
   
-
+  
   .Container {
     display: flex;
-    align-items: center;
+    margin-top: 20px;
     justify-content: space-between;
-    flex-wrap: wrap;
   }
 
   &-logo {  
