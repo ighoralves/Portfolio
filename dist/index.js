@@ -152,7 +152,28 @@ scrollReveal.reveal("#home, #about, #skills, #projects\n  ", {
   interval: 100
 });
 },{}],"javascript/verMais.js":[function(require,module,exports) {
+var botaoVerMais = document.querySelector(".btns1");
+var projetos = document.querySelectorAll(".hide");
 
+function clickTo(e) {
+  projetos.forEach(function (elemento) {
+    if (elemento.classList.contains("hide")) {
+      elemento.classList.remove("hide");
+      elemento.classList.add("visivel");
+      botaoVerMais.innerHTML = "Ver menos";
+    } else {
+      elemento.classList.add("hide");
+      elemento.classList.remove("visivel");
+      botaoVerMais.innerHTML = "Ver mais";
+    }
+  });
+}
+
+function maisProjetos(elemento) {
+  elemento.addEventListener("click", clickTo);
+}
+
+maisProjetos(botaoVerMais);
 },{}],"javascript/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -269,7 +290,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53067" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62726" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

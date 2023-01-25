@@ -1,11 +1,12 @@
 //box-shadow: 0px 0px 12px #00000014;
 
 $--base-color: #6AB99D;
-$--base-color-second: #03030371; 
-$--title-color: #0f241d;
-$--text-color: #757575;
-$--text-color-light: #fafafa;
-$--body-color: #fafafa;
+$--body-color-second: #03030371; 
+$--body-color: #485460;
+$--text-color: #fafafa;
+$--text-color-second: #000;
+$--title-color: #fafafa;
+
 
 $--title-font: 'Poppins', sans-serif;
 $--body-font: 'DM sans', sans-serif;
@@ -29,16 +30,31 @@ body {
   
 }
 
+a {
+  text-decoration: none;
+}
+
 .Linha {
   border-bottom: 1px solid $--base-color;
   position: relative;
   top: 100px;
 }
-.Linha1 {
-  border-bottom: 1px solid $--base-color;
-  position: relative;
+
+
+@media (max-width: 800px) {
+
+  .Linha {
+    border-bottom: 1px solid $--base-color;
+    position: relative;
+    top: 100px;
+  }
 }
-.Linha2 {
-  border-bottom: 1px solid $--base-color;
-  position: relative;
+
+@media (max-width: 500px) {
+
+  .Linha {
+    border-bottom: 1px solid $--base-color;
+    position: relative;
+    top: 200px;
+  }
 }

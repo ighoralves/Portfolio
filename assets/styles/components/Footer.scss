@@ -2,7 +2,7 @@
   max-width: 100%;
   height: 100%;
   position: relative;
-  top: 150px;
+  top: 100px;
   background: $--base-color;
 
   &-content {
@@ -22,7 +22,8 @@
     
     .icon2{
       width: 30px;
-      // background: #fff;
+      padding: 5px;
+      background: #fff;
       border-radius: 8px;
     }
   }

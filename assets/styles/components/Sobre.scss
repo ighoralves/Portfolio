@@ -1,5 +1,4 @@
 .Sobre {
-  background: #fff;
   position:relative;
   top: 100px;
   padding: 100px 0;
@@ -15,6 +14,10 @@
     font-weight: 600;
     text-transform: capitalize;
   }
+
+  // p {
+  //   padding: 100px 0;
+  // }
 
   &-content {
     display: flex;
@@ -52,12 +55,16 @@
     }
   }
 
-  @media (max-width: 780px) {
+  @media (max-width: 600px) {
     top: 200px;
     &-content {
       flex-direction: column;
       text-align: center;
 
+    }
+
+    figure {
+      width: 40%;
     }
 
     &-texts {

@@ -31,7 +31,6 @@
       z-index: 1000;
 
       a {
-        border-bottom: 1px solid $--body-color;
         color: $--body-color;
         display: flex;
         font-size: 22px;
@@ -40,7 +39,8 @@
         text-transform: capitalize;
 
         &:hover {
-          color: $--body-color;
+          color: #fff;
+          border-bottom: 1px solid #fff;
         }
       }
 
