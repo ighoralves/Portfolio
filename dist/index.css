@@ -152,6 +152,7 @@ html {
 }
 
 body {
+  height: 100vh;
   font-family: "DM sans", sans-serif;
   background: #485460;
   -webkit-font-smoothing: antialiased;
@@ -262,7 +263,7 @@ a {
     margin-top: 25px;
   }
   .Header #nav.active #menu {
-    height: 294px;
+    height: 214px;
     visibility: visible;
   }
   .Header #btn-mobile {
