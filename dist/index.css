@@ -211,6 +211,9 @@ a {
   align-items: center;
   gap: 20px;
 }
+.Header #menu .active {
+  animation: loading 2s linear infinite;
+}
 .Header #menu a {
   color: #fafafa;
   font-size: 18px;
@@ -218,7 +221,35 @@ a {
 }
 .Header #menu a:hover {
   color: #6AB99D;
-  border-bottom: 1px solid #6AB99D;
+}
+.Header #menu .loading-text {
+  position: relative;
+  display: inline-block;
+}
+.Header #menu .loading-text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  top: 20px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #6AB99D;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+.Header #menu .loading-text:hover::after {
+  transform: scaleX(1);
+}
+@keyframes loading {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .Header #btn-mobile {
@@ -227,11 +258,12 @@ a {
 .Header #menu a {
   text-decoration: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 780px) {
   .Header #menu {
     display: block;
     position: absolute;
-    width: 45%;
+    text-align: center;
+    width: 30%;
     height: 0;
     top: 110px;
     right: 0;
@@ -245,7 +277,7 @@ a {
     z-index: 1000;
   }
   .Header #menu a {
-    color: #485460;
+    color: #fafafa;
     display: flex;
     font-size: 22px;
     padding: 16px 0;
@@ -253,8 +285,7 @@ a {
     text-transform: capitalize;
   }
   .Header #menu a:hover {
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    color: #fafafa;
   }
   .Header #menu .icon-1 {
     display: flex;
@@ -262,6 +293,10 @@ a {
     gap: 20px;
     margin-left: 30px;
     margin-top: 25px;
+  }
+  .Header #menu .loading-text::after {
+    top: 50px;
+    background: #fafafa;
   }
   .Header #nav.active #menu {
     height: 214px;
@@ -300,6 +335,16 @@ a {
   .Header #nav.active #hamburguer::after {
     transform: rotate(-405deg);
     top: -7px;
+  }
+}
+@media (max-width: 521px) {
+  .Header #menu {
+    width: 40%;
+  }
+}
+@media (max-width: 400px) {
+  .Header #menu {
+    width: 55%;
   }
 }
 
@@ -341,12 +386,15 @@ a {
 }
 .Inicio-image {
   background: #6AB99D;
+  background-size: cover;
   border-radius: 50% 50% 8px 8px;
+  transition: transform 1.5s ease-in;
   position: relative;
   top: -40px;
-  width: 50%;
-  -webkit-animation: roll-in-left 0.6s ease-out both;
-  animation: roll-in-left 0.6s ease-out both;
+  width: 40%;
+}
+.Inicio-image:hover {
+  transform: rotatey(360deg);
 }
 @keyframes imgAnimacao {
   from {
@@ -437,14 +485,14 @@ a {
 }
 .Sobre-content figure {
   background: #6AB99D;
-  width: 20%;
+  width: 30%;
   border-radius: 10px 40px 10px 8px;
   -webkit-animation: roll-in-left 0.6s ease-out both;
   animation: roll-in-left 0.6s ease-out both;
 }
 .Sobre-texts {
   color: #fafafa;
-  max-width: 700px;
+  max-width: 600px;
   font-size: 22px;
   line-height: 28px;
 }
@@ -522,16 +570,17 @@ a {
   -webkit-font-smoothing: auto;
 }
 .Habilidades-content {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 2fr);
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  grid-auto-rows: 8rem;
   gap: 20px;
 }
 .Habilidades-cards {
   padding: 5px 10px;
   background: #fff;
-  box-shadow: 0px 0px 12px #fafafa;
+  box-shadow: 0px 0px 12px #6AB99D;
   width: 100px;
   border-radius: 8px;
   opacity: 0.8;
@@ -564,8 +613,9 @@ a {
 }
 @media (max-width: 600px) {
   .Habilidades-content {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 300px;
+    grid-auto-rows: 6rem;
+    align-items: center;
+    max-width: 280px;
     margin: 0 auto;
     gap: 20px;
   }
@@ -608,7 +658,7 @@ a {
   gap: 30px;
 }
 .Projetos-cards {
-  box-shadow: 0px 0px 12px #fafafa;
+  box-shadow: 0px 0px 12px #6AB99D;
   background: #fff;
   border-radius: 20px;
   max-width: 355px;

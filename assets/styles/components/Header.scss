@@ -32,8 +32,12 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    
 
+    .active {
+      animation: loading 2s linear infinite;
+    }
+    
+    
     a {
       color: $--title-color;
       font-size: 18px;
@@ -41,12 +45,42 @@
       
       
       &:hover {
-        color: $--base-color;
-        border-bottom: 1px solid $--base-color;
+        color: $--base-color;        
       } 
 
     }
+
+    .loading-text {
+      position: relative;
+      // top: 5px;
+      display: inline-block;
+      // overflow: hidden;
+    
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        top: 20px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: $--base-color;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.5s;
+      }
+    
+      &:hover::after {
+        transform: scaleX(1);
+      }
+    }
+
     
   }
-
+  
+  @keyframes loading {
+    from {width: 0;}
+    to {width: 100%;}
+  }
 }

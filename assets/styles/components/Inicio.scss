@@ -44,13 +44,20 @@
 
   &-image {
     background: $--base-color;
+    background-size: cover;
     border-radius: 50% 50% 8px 8px;
     // padding: 10px;
+    transition: transform 1.5s ease-in;
+
     position: relative;
     top: -40px;
-    width: 50%;
-    -webkit-animation: roll-in-left 0.6s ease-out both;
-    animation: roll-in-left 0.6s ease-out both;
+    width: 40%;
+    // -webkit-animation: roll-in-left 0.6s ease-out both;
+    // animation: roll-in-left 0.6s ease-out both;
+
+    &:hover {
+      transform: rotatey(360deg);
+    }
   }
 
   @keyframes imgAnimacao {

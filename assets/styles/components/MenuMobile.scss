@@ -11,13 +11,13 @@
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 780px) {
 
     #menu {
       display: block;
       position: absolute;
-
-      width: 45%;
+      text-align: center;
+      width: 30%;
       height: 0;
       top: 110px;
       right: 0;
@@ -31,7 +31,7 @@
       z-index: 1000;
 
       a {
-        color: $--body-color;
+        color: $--text-color;
         display: flex;
         font-size: 22px;
         padding: 16px 0;
@@ -39,8 +39,8 @@
         text-transform: capitalize;
 
         &:hover {
-          color: #fff;
-          border-bottom: 1px solid #fff;
+          color: $--text-color;
+
         }
       }
 
@@ -50,6 +50,13 @@
         gap: 20px;
         margin-left: 30px;
         margin-top: 25px;
+      }
+
+      .loading-text {
+        &::after {
+          top: 50px;
+          background: $--text-color;
+        }
       }
     }
 
@@ -99,5 +106,17 @@
       }
     }
 
+  }
+
+  @media (max-width: 521px) {
+    #menu {
+      width: 40%;
+    }
+  }
+
+  @media (max-width: 400px) {
+    #menu {
+      width: 55%;
+    }
   }
 }
