@@ -44,12 +44,13 @@
 
   &-image {
     background: $--base-color;
-    border-radius: 50%;
-    padding: -2px;
+    border-radius: 50% 50% 8px 8px;
+    // padding: 10px;
+    position: relative;
+    top: -40px;
     width: 50%;
     -webkit-animation: roll-in-left 0.6s ease-out both;
     animation: roll-in-left 0.6s ease-out both;
-
   }
 
   @keyframes imgAnimacao {
