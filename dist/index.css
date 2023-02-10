@@ -491,11 +491,7 @@ a {
 .Sobre-content figure {
   background: rgb(135, 57, 250);
   width: 30%;
-  border-radius: 41% 59% 46% 54%/69% 80% 20% 31%;
-}
-.Sobre-content figure img {
-  border-radius: 100% 0% 46% 54%/69% 80% 20% 31%;
-  filter: drop-shadow(1px 1px 1px rgb(135, 57, 250));
+  border-radius: 10px;
 }
 .Sobre-texts {
   color: #fafafa;
