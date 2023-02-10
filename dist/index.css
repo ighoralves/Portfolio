@@ -144,7 +144,7 @@ table {
 .Container {
   max-width: 1070px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 22px;
 }
 
 html {
@@ -361,6 +361,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 50px;
 }
 .Inicio-text {
   max-width: 100%;
@@ -386,22 +387,23 @@ a {
 }
 .Inicio-image {
   background: #6AB99D;
-  background-size: cover;
-  border-radius: 50% 50% 8px 8px;
-  transition: transform 1.5s ease-in;
   position: relative;
-  top: -40px;
-  width: 40%;
-}
-.Inicio-image:hover {
-  transform: rotatey(360deg);
+  top: -30px;
+  width: 220px;
+  height: 220px;
+  padding: 40px;
+  object-fit: cover;
+  animation: imgAnimacao 3.5s linear infinite;
 }
 @keyframes imgAnimacao {
-  from {
-    top: -15px;
+  0%, 100% {
+    border-radius: 40% 60% 70% 30%/40% 40% 60% 50%;
   }
-  to {
-    top: 5px;
+  34% {
+    border-radius: 70% 30% 50% 50%/30% 30% 70% 70%;
+  }
+  67% {
+    border-radius: 100% 60% 60% 100%/100% 100% 60% 60%;
   }
 }
 @media (max-width: 500px) {
@@ -487,42 +489,16 @@ a {
   background: #6AB99D;
   width: 30%;
   border-radius: 10px 40px 10px 8px;
-  -webkit-animation: roll-in-left 0.6s ease-out both;
-  animation: roll-in-left 0.6s ease-out both;
 }
 .Sobre-texts {
   color: #fafafa;
-  max-width: 600px;
+  max-width: 630px;
   font-size: 22px;
   line-height: 28px;
 }
 .Sobre-texts .Text1 {
   margin-bottom: 30px;
   font-size: 30px;
-}
-@-webkit-keyframes roll-in-left {
-  0% {
-    -webkit-transform: translateX(-800px) rotate(-540deg);
-    transform: translateX(-800px) rotate(-540deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0) rotate(0deg);
-    transform: translateX(0) rotate(0deg);
-    opacity: 1;
-  }
-}
-@keyframes roll-in-left {
-  0% {
-    -webkit-transform: translateX(-800px) rotate(-540deg);
-    transform: translateX(-800px) rotate(-540deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0) rotate(0deg);
-    transform: translateX(0) rotate(0deg);
-    opacity: 1;
-  }
 }
 @media (max-width: 900px) {
   .Sobre-texts {
