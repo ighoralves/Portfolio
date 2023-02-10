@@ -24,7 +24,14 @@
     figure {
       background: $--base-color;
       width: 30%;
-      border-radius: 10px 40px 10px 8px;
+      border-radius: 41% 59% 46% 54% / 69% 80% 20% 31% ;
+
+      img {
+        border-radius: 100% 0% 46% 54% / 69% 80% 20% 31% ;
+        filter: drop-shadow(
+          1px 1px 1px $--base-color
+        );
+      }
     }
   }
 

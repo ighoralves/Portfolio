@@ -1,17 +1,18 @@
 .Header {
-  background: $--body-color;
-  border-bottom: 1px solid $--base-color;
-  
-  padding: 28px 0;
-  width: 100%;
+  background: rgba(0, 0, 0, 0.725);
+  backdrop-filter: blur(4px);
+  height: 100px;
+  width: 100vw;
   position: fixed;
   top: 0px;
   z-index: 999;
   
   
-  .Container {
+  &-main {
+    padding: 0px;
     display: flex;
-    margin-top: 20px;
+    margin-top: 40px;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -80,7 +81,11 @@
   }
   
   @keyframes loading {
-    from {width: 0;}
-    to {width: 100%;}
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
   }
 }

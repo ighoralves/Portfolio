@@ -16,15 +16,21 @@
   &-text {
     color: #fff;
     font-size: 18px;
+
+    span{
+      color: $--base-color;
+    }
   }
 
   &-icons {
-    
-    .icon2{
-      width: 30px;
-      padding: 5px;
-      background: #fff;
-      border-radius: 8px;
+    font-size: 30px;
+
+    .uil{
+      color: #fff;
+
+      &:hover {
+        color: $--base-color;
+      }
     }
   }
 

@@ -164,16 +164,6 @@ try {
 } finally {
   _iterator.f();
 }
-},{}],"javascript/scrollReveal.js":[function(require,module,exports) {
-var scrollReveal = ScrollReveal({
-  origin: "top",
-  distance: "30px",
-  duration: 700,
-  reset: true
-});
-scrollReveal.reveal("#home, h2, h3, #about, #skills\n  ", {
-  interval: 100
-});
 },{}],"javascript/verMais.js":[function(require,module,exports) {
 var botaoVerMais = document.querySelector(".btns1");
 var projetos = document.querySelectorAll(".hide");
@@ -204,10 +194,8 @@ require("./textauto");
 
 require("./menumobile");
 
-require("./scrollReveal");
-
 require("./verMais");
-},{"./textauto":"javascript/textauto.js","./menumobile":"javascript/menumobile.js","./scrollReveal":"javascript/scrollReveal.js","./verMais":"javascript/verMais.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./textauto":"javascript/textauto.js","./menumobile":"javascript/menumobile.js","./verMais":"javascript/verMais.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -313,7 +301,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65426" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61547" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
