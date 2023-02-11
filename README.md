@@ -44,7 +44,3 @@ Esse projeto está sob a licença MIT.
 ---
 
 Feito com ♥ by Ighor-Alves
-<<<<<<< HEAD
-=======
-
->>>>>>> fcac1229639408877bfe4b2e6c361a98a50f7e54
