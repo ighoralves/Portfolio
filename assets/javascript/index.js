@@ -1,4 +1,5 @@
 import "./textauto";
-import "./menumobile";
+import "./Conf";
+import "./temaDark";
 import "./verMais";
 import "./headerScroll";

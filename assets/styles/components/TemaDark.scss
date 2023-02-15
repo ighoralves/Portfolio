@@ -1,0 +1,84 @@
+.Conf {
+
+  .DarkLight {
+    position: fixed;
+    z-index: 8;
+    top: 0px;
+    right: 0px;
+    width: 340px;
+    height: 100vh;
+    padding: 16px;
+    background: rgb(47, 46, 52);
+    transform: translateX(100%);
+    transition: transform 0.45s ease 0s;
+
+    .hktitle {
+      font-weight: 600;
+      text-transform: capitalize;
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: $--text-color;
+
+    }
+
+    .Checkbox {
+      left: 10px;
+      padding: 0 22px;
+      opacity: 0;
+      position: absolute;
+
+      &:checked + .Label .Ball {
+        transform: translateX(34px);
+      }
+    }
+
+    .Label {
+      background: #fff;
+      border-radius: 50px;
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 5px;
+      position: relative;
+      left: 12px;
+      height: 16px;
+      width: 50px;
+      transform: scale(1.5);
+
+      .Ball {
+        background: #000;
+        position: absolute;
+        border-radius: 50%;
+        top: 2px;
+        left: 2px;
+        height: 22px;
+        width: 22px;
+        transform: translateX(0px);
+        transition: transform 0.2s linear;
+      }
+    }
+
+    .uil-moon {
+      color: #f1c40f;
+    }
+
+    .uil-sun {
+      color: #f39c13;
+    }
+  }
+  .show {
+    position: fixed;
+    z-index: 8;
+    top: 0px;
+    right: 0px;
+    width: 340px;
+    height: 100vh;
+    padding: 16px;
+    background: rgb(47, 46, 52);
+    transform: translateX(0px);
+    transition: transform 0.45s ease 0s;
+  }
+}

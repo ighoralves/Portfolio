@@ -1,11 +1,10 @@
 .Habilidades {
-  background: $--body-color-second;
   position: relative;
   top: 100px;
   padding: 100px 0;
 
   &-title {
-    color: $--title-color;
+    // color: $--title-color;
     text-align: center;
     margin-bottom: 80px;
     font-size: 50px;
@@ -85,7 +84,7 @@
       position: relative;
       top: 40px;
       right: 55px;
-      color: #fff;
+      // color: #fff;
       text-align: center;
       rotate: 309deg;
       font-size: 16px;

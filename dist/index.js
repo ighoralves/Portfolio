@@ -130,40 +130,26 @@ function typeWriter(elemento) {
 
 var textAuto = document.querySelector(".autotext");
 typeWriter(textAuto);
-},{}],"javascript/menumobile.js":[function(require,module,exports) {
-function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
+},{}],"javascript/Conf.js":[function(require,module,exports) {
+var mobileMenu = document.querySelector(".DarkLight");
+var toggleButton = document.querySelector(".toggle");
+var menu = document.querySelector(".Conf");
+toggleButton.addEventListener("click", function () {
+  mobileMenu.classList.toggle("show");
+});
+document.addEventListener("click", function (event) {
+  var isInsideMenu = menu.contains(event.target);
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-
-var btn = document.getElementById("btn-mobile");
-
-function toggleMenu(event) {
-  if (event.type === "touchstart") event.preventDefaul();
-  var nav = document.getElementById("nav");
-  nav.classList.toggle("active");
-}
-
-btn.addEventListener("click", toggleMenu);
-btn.addEventListener("touchstart", toggleMenu);
-var links = document.querySelectorAll("nav ul li a");
-
-var _iterator = _createForOfIteratorHelper(links),
-    _step;
-
-try {
-  for (_iterator.s(); !(_step = _iterator.n()).done;) {
-    var link = _step.value;
-    link.addEventListener("click", function () {
-      nav.classList.remove("active");
-    });
+  if (!isInsideMenu && mobileMenu.classList.contains("show")) {
+    mobileMenu.classList.remove("show");
   }
-} catch (err) {
-  _iterator.e(err);
-} finally {
-  _iterator.f();
-}
+});
+},{}],"javascript/temaDark.js":[function(require,module,exports) {
+var themeToggle = document.getElementById("chk");
+var body = document.body;
+themeToggle.addEventListener("click", function () {
+  body.classList.toggle("Light");
+});
 },{}],"javascript/verMais.js":[function(require,module,exports) {
 var botaoVerMais = document.querySelector(".btns1");
 var projetos = document.querySelectorAll(".hide");
@@ -202,12 +188,14 @@ window.onscroll = function () {
 
 require("./textauto");
 
-require("./menumobile");
+require("./Conf");
+
+require("./temaDark");
 
 require("./verMais");
 
 require("./headerScroll");
-},{"./textauto":"javascript/textauto.js","./menumobile":"javascript/menumobile.js","./verMais":"javascript/verMais.js","./headerScroll":"javascript/headerScroll.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./textauto":"javascript/textauto.js","./Conf":"javascript/Conf.js","./temaDark":"javascript/temaDark.js","./verMais":"javascript/verMais.js","./headerScroll":"javascript/headerScroll.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -279,7 +267,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"C:\\MAMP\\htdocs\\portfolio\\assets\\img\\wave.png":[["wave.1d060f10.png","img/wave.png"],"img/wave.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./javascript/index");
@@ -313,7 +301,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51729" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56034" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
