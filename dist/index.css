@@ -142,7 +142,7 @@ table {
 }
 
 .Container {
-  max-width: 1070px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 22px;
 }
@@ -184,20 +184,25 @@ a {
   }
 }
 .Header {
-  background: rgba(0, 0, 0, 0.725);
-  backdrop-filter: blur(4px);
   height: 100px;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0px;
+  left: 0px;
+  right: 0px;
   z-index: 999;
 }
-.Header-main {
-  padding: 0px;
+.Header .scrolled {
+  width: 100% !important;
+  background: rgba(0, 0, 0, 0.725);
+  backdrop-filter: blur(4px);
+}
+.Header #nav {
   display: flex;
-  margin-top: 40px;
   align-items: center;
   justify-content: space-between;
+  height: 100px;
+  width: 100%;
 }
 .Header-logo a {
   text-decoration: none;
@@ -352,21 +357,19 @@ a {
 
 .Inicio {
   background: rgba(3, 3, 3, 0.4431372549);
-  padding: 100px 0;
   max-width: 100%;
-  height: 100%;
+  height: 100vh;
   position: relative;
-  top: 100px;
 }
 .Inicio-cotent {
   max-width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 50px;
+  justify-content: center;
+  gap: 200px;
 }
 .Inicio-text {
-  max-width: 100%;
   color: #fafafa;
   display: flex;
   flex-direction: column;

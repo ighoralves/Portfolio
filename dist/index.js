@@ -187,6 +187,16 @@ function maisProjetos(elemento) {
 }
 
 maisProjetos(botaoVerMais);
+},{}],"javascript/headerScroll.js":[function(require,module,exports) {
+window.onscroll = function () {
+  var menu = document.getElementById("nav");
+
+  if (window.pageYOffset > 10) {
+    menu.classList.add("scrolled");
+  } else {
+    menu.classList.remove("scrolled");
+  }
+};
 },{}],"javascript/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -195,7 +205,9 @@ require("./textauto");
 require("./menumobile");
 
 require("./verMais");
-},{"./textauto":"javascript/textauto.js","./menumobile":"javascript/menumobile.js","./verMais":"javascript/verMais.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+
+require("./headerScroll");
+},{"./textauto":"javascript/textauto.js","./menumobile":"javascript/menumobile.js","./verMais":"javascript/verMais.js","./headerScroll":"javascript/headerScroll.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -301,7 +313,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49713" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51729" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

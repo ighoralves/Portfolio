@@ -1,19 +1,25 @@
 .Header {
-  background: rgba(0, 0, 0, 0.725);
-  backdrop-filter: blur(4px);
   height: 100px;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0px;
+  left: 0px;
+  right: 0px;
   z-index: 999;
   
   
-  &-main {
-    padding: 0px;
+  .scrolled {
+    width: 100% !important;
+    background: rgba(0, 0, 0, 0.725);
+    backdrop-filter: blur(4px);
+  }
+  
+  #nav {
     display: flex;
-    margin-top: 40px;
     align-items: center;
     justify-content: space-between;
+    height: 100px;
+    width: 100%;
   }
 
   &-logo {  
