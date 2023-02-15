@@ -203,6 +203,18 @@ a {
 .Header-logo a span {
   color: rgb(135, 57, 250);
 }
+.Header .logoMobile a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 20px;
+  font-weight: 600;
+}
+.Header .logoMobile a span {
+  color: rgb(135, 57, 250);
+}
+.Header .logoMobile {
+  display: none;
+}
 .Header-bts {
   display: flex;
   gap: 10px;
@@ -301,31 +313,39 @@ a {
 .Inicio {
   background: url("wave.1d060f10.png") no-repeat;
   background-position: top;
-  background-size: 100%;
+  background-size: 150%;
   max-width: 100%;
   height: 100vh;
 }
 .Inicio-cotent {
+  padding: 100px 0;
   max-width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 200px;
 }
 .Inicio-text {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 .Inicio-text .text1 {
-  font-size: 35px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.Inicio-text .text2 {
+  margin-top: 10px;
+  margin-bottom: 100px;
+  font-size: 28px;
   font-weight: 400;
+  color: rgb(106, 106, 109);
 }
 .Inicio-image {
   background: rgb(135, 57, 250);
   position: relative;
-  top: -30px;
+  top: -50px;
   width: 220px;
   height: 220px;
   padding: 40px;
@@ -343,13 +363,48 @@ a {
     border-radius: 100% 60% 60% 100%/100% 100% 60% 60%;
   }
 }
-@media (max-width: 500px) {
-  .Inicio {
-    padding: 100px 0;
+.Inicio .ScrollDown {
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  position: relative;
+  animation: scrollTop 3.5s linear infinite;
+  cursor: pointer;
+}
+.Inicio .uil-arrow-down {
+  font-size: 25px;
+}
+@keyframes scrollTop {
+  0%, 100% {
+    top: 0px;
   }
+  50% {
+    top: 30px;
+  }
+}
+@media (max-width: 500px) {
   .Inicio-text {
     text-align: center;
     max-width: 350px;
+  }
+  .Inicio-image {
+    background: rgb(135, 57, 250);
+    position: relative;
+    width: 180px;
+    height: 180px;
+    padding: 30px;
+    object-fit: cover;
+    animation: imgAnimacao 3.5s linear infinite;
+  }
+  .Inicio-cotent {
+    gap: 0px;
+  }
+  .Inicio .text1 {
+    font-size: 30px;
+  }
+  .Inicio .text2 {
+    font-size: 20px;
+    margin-bottom: 60px;
   }
   .Inicio-bts {
     justify-content: center;
@@ -359,15 +414,13 @@ a {
   }
 }
 @media (max-width: 900px) {
-  .Inicio {
-    top: 100px;
-  }
   .Inicio-text {
     text-align: center;
   }
   .Inicio-cotent {
     flex-direction: column-reverse;
-    gap: 30px;
+    padding: 100px 0;
+    gap: 0px;
   }
   .Inicio-bts {
     justify-content: center;
@@ -375,10 +428,13 @@ a {
   .Inicio-bts figure {
     width: 35px;
   }
+  .Inicio .ScrollDown {
+    margin: 0 auto;
+  }
 }
 
 .Inicio .autotext {
-  font-size: 60px;
+  font-size: 46px;
   font-weight: 600;
 }
 .Inicio .autotext::after {
@@ -397,7 +453,7 @@ a {
 }
 @media (max-width: 500px) {
   .Inicio .autotext {
-    font-size: 40px;
+    font-size: 32px;
     letter-spacing: 1px;
   }
 }
@@ -465,6 +521,12 @@ a {
     max-width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .Sobre-title1 {
+    font-size: 30px;
+  }
+}
+
 .Habilidades {
   position: relative;
   top: 100px;
@@ -526,6 +588,9 @@ a {
     max-width: 280px;
     margin: 0 auto;
     gap: 20px;
+  }
+  .Habilidades-title {
+    font-size: 30px;
   }
   .Habilidades-cards {
     opacity: 1;
@@ -632,6 +697,9 @@ a {
   .Projetos-content {
     display: flex;
     flex-direction: column;
+  }
+  .Projetos-title {
+    font-size: 30px;
   }
   .Projetos-cards {
     max-width: 270px;

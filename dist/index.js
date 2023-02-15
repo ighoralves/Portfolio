@@ -144,6 +144,21 @@ document.addEventListener("click", function (event) {
     mobileMenu.classList.remove("show");
   }
 });
+var logoDesktop = document.querySelector(".Header-logo");
+var logoMobile = document.querySelector(".logoMobile");
+
+function toggleLogo() {
+  if (window.innerWidth < 500) {
+    logoDesktop.style.display = "none";
+    logoMobile.style.display = "block";
+  } else {
+    logoDesktop.style.display = "block";
+    logoMobile.style.display = "none";
+  }
+}
+
+window.addEventListener("resize", toggleLogo);
+toggleLogo();
 },{}],"javascript/temaDark.js":[function(require,module,exports) {
 var themeToggle = document.getElementById("chk");
 var body = document.body;
@@ -301,7 +316,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56044" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57871" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

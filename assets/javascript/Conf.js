@@ -12,3 +12,19 @@ document.addEventListener("click", (event) => {
     mobileMenu.classList.remove("show");
   }
 });
+
+var logoDesktop = document.querySelector(".Header-logo");
+var logoMobile = document.querySelector(".logoMobile");
+
+function toggleLogo() {
+  if (window.innerWidth < 500) {
+    logoDesktop.style.display = "none";
+    logoMobile.style.display = "block";
+  } else {
+    logoDesktop.style.display = "block";
+    logoMobile.style.display = "none";
+  }
+}
+
+window.addEventListener("resize", toggleLogo);
+toggleLogo();

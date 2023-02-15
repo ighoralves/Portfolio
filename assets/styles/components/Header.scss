@@ -43,6 +43,23 @@
     }
   }
 
+  .logoMobile{  
+    a {
+      text-decoration: none;
+      color: $--title-color;
+      font-size: 20px;
+      font-weight: 600;
+
+      span {
+        color: $--base-color;
+      }
+    }
+  }
+
+  .logoMobile {
+    display: none;
+  }
+
   &-bts {
     display: flex;
     gap: 10px;

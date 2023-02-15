@@ -83,7 +83,11 @@
   }
 
   @media (max-width: 500px) {
-    // top: 0;
-
+    
+    &-title1 {
+      
+      font-size: 30px;
+      
+    }
   }
 }
