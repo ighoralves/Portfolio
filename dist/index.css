@@ -655,91 +655,67 @@ a {
   text-transform: capitalize;
   margin-bottom: 80px;
 }
-.Projetos-content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
 .Projetos-cards {
-  background: #fff;
-  border-radius: 20px;
-  max-width: 355px;
-  padding: 16px 8px;
-  text-align: center;
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  overflow: hidden;
-  transition: ease-in-out 0.3s;
+  max-width: 100%;
+  height: 100%;
+  background: #2F2E34;
+  padding: 12px;
+  border-radius: 8px;
+  gap: 10px;
 }
 .Projetos-card {
-  display: block;
-  max-width: 350px;
-  height: 200px;
-  background: red;
-}
-.Projetos-text3 {
-  color: #000;
-  max-width: 100%;
-}
-.Projetos-bts {
-  margin: 0 auto;
   display: flex;
-  width: 110px;
-  padding: 8px 15px;
-  color: #fff;
-  gap: 10px;
-  text-transform: capitalize;
   align-items: center;
-  background: rgb(135, 57, 250);
+  justify-content: space-between;
+  padding: 40px 12px;
+  border-top: 1px solid #ccc;
+  padding: 40px 0;
+}
+.Projetos-card:first-child {
+  border-top: none;
+}
+.Projetos-card a {
+  color: #fff;
+}
+.Projetos-card figure img {
+  width: 200px;
+  height: auto;
   border-radius: 8px;
 }
-.Projetos-bts .image1 {
-  width: 30px;
+.Projetos-text1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
 }
-.Projetos-btn {
-  max-width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 30px;
+.Projetos-text2 {
+  width: 300px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
-.Projetos .btns1 {
-  cursor: pointer;
-  padding: 15px 25px;
+.Projetos-text3 {
+  color: rgb(135, 57, 250);
+}
+.Projetos-btns1 {
+  padding: 10px 15px;
   border-radius: 8px;
   font-size: 16px;
   background: rgb(135, 57, 250);
-  border: #fff;
-  margin-top: 20px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
 }
-.Projetos .hide {
-  opacity: 0;
-  display: none;
-  transition: 1000ms;
-}
-@media (max-width: 800px) {
-  .Projetos-content {
-    max-width: 350px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (max-width: 600px) {
-  .Projetos-content {
-    display: flex;
-    flex-direction: column;
-  }
-  .Projetos-title {
-    font-size: 30px;
-  }
-  .Projetos-cards {
-    max-width: 270px;
-    margin: 0 auto;
-  }
+@media (max-width: 750px) {
   .Projetos-card {
-    max-width: 270px;
-    height: 250px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .Projetos-text2 {
+    width: 100%;
   }
 }
 
