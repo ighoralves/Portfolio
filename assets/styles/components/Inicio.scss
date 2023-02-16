@@ -1,7 +1,7 @@
 .Inicio {
   background: url('/img/wave.png') no-repeat;
   background-position: top;
-  background-size: 150%;
+  background-size: 130%;
   max-width: 100%;
   height: 100vh;
 
@@ -39,7 +39,7 @@
     // flex: 1 1 auto;
     background: $--base-color;
     position: relative;
-    top: -50px;
+    top: -70px;
     width: 220px;
     height: 220px;
     padding: 40px;
@@ -111,7 +111,7 @@
     }
 
     &-cotent {
-      gap: 0px;
+      height: 80vh;
     }
 
     .text1 {
@@ -133,7 +133,7 @@
   }
 
 
-  @media (max-width: 900px) {
+  @media (max-width: 780px) {
     
     &-text {
       text-align: center;
@@ -141,8 +141,24 @@
 
     &-cotent {
       flex-direction: column-reverse;
-      padding: 100px 0;
+      height: 85vh;
       gap: 0px;
+
+      .text2 {
+        margin-bottom: 60px; 
+      }
+    }
+
+    &-image {
+      background: $--base-color;
+      position: relative;
+      // top: -50px;
+      width: 180px;
+      height: 180px;
+      padding: 30px;
+      object-fit: cover;
+      animation: imgAnimacao 3.5s linear infinite;
+      
     }
 
     &-bts {

@@ -83,4 +83,19 @@
     transform: translateX(0px);
     transition: transform 0.45s ease 0s;
   }
+
+  @media (max-width: 500px) {
+    .show {
+      position: fixed;
+      z-index: 8;
+      top: 0px;
+      right: 0px;
+      width: 150px;
+      height: 100vh;
+      padding: 16px;
+      background: rgb(47, 46, 52);
+      transform: translateX(0px);
+      transition: transform 0.45s ease 0s;
+    }
+  }
 }

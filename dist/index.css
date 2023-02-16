@@ -172,21 +172,26 @@ a {
 
 .Header #nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  z-index: 5;
+  top: 0px;
+  left: 0px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 100px;
-  z-index: 999;
+  height: 6rem;
+  width: 100vw;
+  transition: background 0.45s ease 0s;
 }
 .Header .scrolled {
+  position: fixed;
+  z-index: 5;
+  top: 0px;
+  left: 0px;
   display: flex;
-  height: 200px;
+  height: 6rem;
+  width: 100vw;
   background: rgba(0, 0, 0, 0.725);
   backdrop-filter: blur(4px);
+  transition: background 0.45s ease 0s;
 }
 .Header .flex {
   width: 100%;
@@ -233,6 +238,7 @@ a {
   margin-top: 5px;
   font-size: 26px;
   color: #fff;
+  cursor: pointer;
 }
 .Header .uil-setting:hover {
   color: rgb(135, 57, 250);
@@ -309,11 +315,25 @@ a {
   transform: translateX(0px);
   transition: transform 0.45s ease 0s;
 }
+@media (max-width: 500px) {
+  .Conf .show {
+    position: fixed;
+    z-index: 8;
+    top: 0px;
+    right: 0px;
+    width: 150px;
+    height: 100vh;
+    padding: 16px;
+    background: rgb(47, 46, 52);
+    transform: translateX(0px);
+    transition: transform 0.45s ease 0s;
+  }
+}
 
 .Inicio {
   background: url("wave.1d060f10.png") no-repeat;
   background-position: top;
-  background-size: 150%;
+  background-size: 130%;
   max-width: 100%;
   height: 100vh;
 }
@@ -345,7 +365,7 @@ a {
 .Inicio-image {
   background: rgb(135, 57, 250);
   position: relative;
-  top: -50px;
+  top: -70px;
   width: 220px;
   height: 220px;
   padding: 40px;
@@ -397,7 +417,7 @@ a {
     animation: imgAnimacao 3.5s linear infinite;
   }
   .Inicio-cotent {
-    gap: 0px;
+    height: 80vh;
   }
   .Inicio .text1 {
     font-size: 30px;
@@ -413,14 +433,26 @@ a {
     width: 30px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 780px) {
   .Inicio-text {
     text-align: center;
   }
   .Inicio-cotent {
     flex-direction: column-reverse;
-    padding: 100px 0;
+    height: 85vh;
     gap: 0px;
+  }
+  .Inicio-cotent .text2 {
+    margin-bottom: 60px;
+  }
+  .Inicio-image {
+    background: rgb(135, 57, 250);
+    position: relative;
+    width: 180px;
+    height: 180px;
+    padding: 30px;
+    object-fit: cover;
+    animation: imgAnimacao 3.5s linear infinite;
   }
   .Inicio-bts {
     justify-content: center;
