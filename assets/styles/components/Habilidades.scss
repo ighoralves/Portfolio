@@ -6,102 +6,374 @@
   &-title {
     // color: $--title-color;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     font-size: 50px;
     font-weight: 600;
     text-transform: capitalize;
     -webkit-font-smoothing: auto;
   }
 
+  &-text1 {
+    font-size: 22px;
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+    color: #6A6A6D;
+    margin-bottom: 30px;
+  }
+
   &-content {
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 
     repeat(auto-fit, minmax(8rem, 1fr));
-    grid-auto-rows: 8rem;
     gap: 20px;
-    
-
   }
 
   &-cards {
-    padding: 5px 10px;
+
+    padding: 15px 20px;
     background: #fff;
-    // box-shadow: 0px 0px 12px $--base-color;
-    width: 100px;
     border-radius: 8px;
     opacity: .8;
     cursor: pointer;
-    overflow: hidden;
 
     &:hover {
       opacity: 1;
       transition: .6s;
       transform: scale(1.1);
     }
-  }
 
-  .ShowHidden {
-    position: relative;
-    top: 50px;
-    right: 55px;
-    color: #fff;
-    text-align: center;
-    rotate: 312deg;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: capitalize;
-    width: 200px;
-    padding: 5px;
-
-    background: #000;
-  }
-
-  @media (max-width: 800px) {
-    &-cards {
-      opacity: 1;
+    .image-text {
+      margin-top: 50px;
+      display: none;
+      background: #2F2E34;
+      width: 500px;
+      padding: 20px;
+      line-height: 140%;
+      color: #fff;
+      z-index: 5;
     }
-  }
 
-  @media (max-width: 600px){
-    // margin-top: 100px;
-    &-content {
-      // grid-template-columns: repeat(3, 1fr);
-      grid-auto-rows: 6rem;
-      align-items: center;
-      max-width: 280px;
-      margin: 0 auto;
-      gap: 20px;
+    .textsline {
+      position: absolute;
+      // top: 0px;
+      left: 0px;
+    }
+
+    .textsline2 {
+      position: absolute;
+      // top: 0px;
+      left: 0px;
+    }
+
+    .textsline3 {
+      position: absolute;
+      // top: 0px;
+      left: 0px;
+    }
+
+    .textsline4 {
+      position: absolute;
+      // top: 0px;
+      left: 0px;
     }
     
+    .textsline5 {
+      position: absolute;
+      // top: 0px;
+      left: -100px;
+    }
 
+    .textsline6 {
+      position: absolute;
+      // top: 0px;
+      left: -250px;
+    }
+
+    .show {
+      display: block;
+    }
+    
+  }
+
+  @media (max-width: 1250px) {
+    .textsline4 {
+      position: absolute;
+      // top: 0px;
+      left: -100px;
+    }
+
+    .textsline5 {
+      position: absolute;
+      // top: 0px;
+      left: -170px;
+    }
+
+    .textsline6 {
+      position: absolute;
+      // top: 0px;
+      left: -300px;
+    }
+  }
+
+  @media (max-width: 1130px) {
+    .textsline4 {
+      position: absolute;
+      // top: 0px;
+      left: -170px;
+    }
+
+    .textsline5 {
+      position: absolute;
+      // top: 0px;
+      left: -370px;
+    }
+
+    .textsline6 {
+      position: absolute;
+      // top: 0px;
+      left: -450px;
+    }
+  }
+
+
+
+  @media (max-width: 900px) {
+
+    .textsline {
+      position: absolute;
+      top: 100px;
+      left: 160px;
+    }
+
+    .textsline2 {
+      position: absolute;
+      top: 100px;
+      left: 0px;
+    }
+
+    .textsline3 {
+      position: absolute;
+      top: 100px;
+      left: -150px;
+    }
+
+    .textsline4 {
+      position: absolute;
+      top: 100px;
+      left: -300px;
+    }
+
+    .textsline5 {
+      position: absolute;
+      top: 100px;
+      left: -450px;
+    }
+
+    .textsline6 {
+      position: absolute;
+      top: -50px;
+      left: 170px;
+    }
+  }
+
+  @media (max-width: 780px) {
+    .image-text{
+      width: 400px;
+    }
+
+    .textsline {
+      position: absolute;
+      top: 250px;
+      left: 70px;
+      
+    }
+
+    .textsline2 {
+      position: absolute;
+      top: 250px;
+      left: -90px;
+    }
+
+    .textsline3 {
+      position: absolute;
+      top: 250px;
+      left: -260px;
+    }
+
+    .textsline4 {
+      position: absolute;
+      top: 250px;
+      left: -430px;
+    }
+
+    .textsline5 {
+      position: absolute;
+      top: 130px;
+      left: 80px;
+    }
+
+    .textsline6 {
+      position: absolute;
+      top: 130px;
+      left: -90px;
+    }
+  }
+
+  @media (max-width: 635px){
+    
+    &-cards {
+      opacity: 1;
+      width: 100px;
+    }
+
+    .textsline {
+      position: absolute;
+      top: 250px;
+      left: 0px;
+      
+    }
+
+    .textsline2 {
+      position: absolute;
+      top: 250px;
+      left: -150px;
+    }
+
+    .textsline3 {
+      position: absolute;
+      top: 250px;
+      left: -330px;
+    }
+
+    .textsline4 {
+      position: absolute;
+      top: 130px;
+      left: 25px;
+    }
+
+    .textsline5 {
+      position: absolute;
+      top: 130px;
+      left: -150px;
+    }
+
+    .textsline6 {
+      position: absolute;
+      top: 130px;
+      left: -330px;
+    }
+
+  }
+
+  @media (max-width: 550px) {
     &-title {
-      font-size: 30px;
-      // text-align: center;
+      font-size: 28px;
+    }
+
+    &-text1 {
+      font-size: 18px;
+      max-width: 100%;
     }
 
     &-cards {
       opacity: 1;
-      width: 75px;
+      width: 70px;
+      padding:  10px 15px;
     }
 
-
-    .ShowHidden {
-      position: relative;
-      top: 40px;
-      right: 55px;
-      // color: #fff;
-      text-align: center;
-      rotate: 309deg;
-      font-size: 16px;
-      font-weight: 600;
-      text-transform: capitalize;
-      width: 190px;
-      padding: 5px;
-  
-      background: #000;
+    .image-text {
+      width: 350px;
+      font-size: 14px;
     }
+
+    .textsline {
+      position: absolute;
+      top: 150px;
+      left: 10px;
+      
+    }
+
+    .textsline2 {
+      position: absolute;
+      top: 150px;
+      left: -140px;
+    }
+
+    .textsline3 {
+      position: absolute;
+      top: 150px;
+      left: -305px;
+    }
+
+    .textsline4 {
+      position: absolute;
+      top: 50px;
+      left: 10px;
+    }
+
+    .textsline5 {
+      position: absolute;
+      top: 50px;
+      right: -150px;
+    }
+
+    .textsline6 {
+      position: absolute;
+      top: 50px;
+      left: -300px;
+    }
+  }
+
+  @media (max-width: 484px) {
+   &-content {
+    width: 280px;
+    margin: 0 auto;
+    }
+
+   .image-text {
+    width: 220px;
+    font-size: 12px;
+    }
+
+    .textsline {
+      position: absolute;
+      top: 250px;
+      left: 0px;
+    }
+
+    .textsline2 {
+      position: absolute;
+      top: 250px;
+      left: -140px;
+    }
+
+    .textsline3 {
+      position: absolute;
+      top: 150px;
+      left: 0px;
+    }
+
+    .textsline4 {
+      position: absolute;
+      top: 150px;
+      left: -135px;
+    }
+
+    .textsline5 {
+      position: absolute;
+      top: 50px;
+      left: 0px;
+    }
+
+    .textsline6 {
+      position: absolute;
+      top: 50px;
+      left: -135px;
+    }
+
   }
 
 }

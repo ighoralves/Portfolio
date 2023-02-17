@@ -164,6 +164,17 @@ function toggleLogo() {
 
 window.addEventListener("resize", toggleLogo);
 toggleLogo();
+},{}],"javascript/habilidade.js":[function(require,module,exports) {
+var imageDivs = document.querySelectorAll(".image-div");
+imageDivs.forEach(function (div) {
+  var imgText = div.querySelector(".image-text");
+  div.addEventListener("mouseover", function () {
+    imgText.style.display = "block";
+  });
+  div.addEventListener("mouseout", function () {
+    imgText.style.display = "none";
+  });
+});
 },{}],"javascript/temaDark.js":[function(require,module,exports) {
 var themeToggle = document.getElementById("chk");
 var body = document.body;
@@ -189,10 +200,12 @@ require("./parallax");
 
 require("./Conf");
 
+require("./habilidade");
+
 require("./temaDark");
 
 require("./headerScroll");
-},{"./textauto":"javascript/textauto.js","./parallax":"javascript/parallax.js","./Conf":"javascript/Conf.js","./temaDark":"javascript/temaDark.js","./headerScroll":"javascript/headerScroll.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./textauto":"javascript/textauto.js","./parallax":"javascript/parallax.js","./Conf":"javascript/Conf.js","./habilidade":"javascript/habilidade.js","./temaDark":"javascript/temaDark.js","./headerScroll":"javascript/headerScroll.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -298,7 +311,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49447" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53722" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
