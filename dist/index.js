@@ -168,10 +168,10 @@ toggleLogo();
 var imageDivs = document.querySelectorAll(".image-div");
 imageDivs.forEach(function (div) {
   var imgText = div.querySelector(".image-text");
-  div.addEventListener("mouseover", function () {
+  div.addEventListener("click", function () {
     imgText.style.display = "block";
   });
-  div.addEventListener("mouseout", function () {
+  div.addEventListener("toggle", function () {
     imgText.style.display = "none";
   });
 });
@@ -311,7 +311,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65502" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52814" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

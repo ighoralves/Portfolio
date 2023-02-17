@@ -1,11 +1,11 @@
-var imageDivs = document.querySelectorAll(".image-div");
+const imageDivs = document.querySelectorAll(".image-div");
 
 imageDivs.forEach(function (div) {
-  var imgText = div.querySelector(".image-text");
-  div.addEventListener("mouseover", function () {
+  const imgText = div.querySelector(".image-text");
+  div.addEventListener("click", function () {
     imgText.style.display = "block";
   });
-  div.addEventListener("mouseout", function () {
+  div.addEventListener("toggle", function () {
     imgText.style.display = "none";
   });
 });

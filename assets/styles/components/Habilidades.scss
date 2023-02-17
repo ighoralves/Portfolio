@@ -37,6 +37,7 @@
     opacity: .8;
     cursor: pointer;
 
+
     .image-div {
       width: 70%;
       margin: 0 auto;
@@ -55,12 +56,19 @@
       color: #fff;
       z-index: 5;
     } 
+
     .show {
       display: block;
     }
+
+    &:first-child {
+      .image-text {
+        display: block;
+      }
+    }
   }   
 
-  @media (max-width: 635px){
+  @media (max-width: 635px) {
     &-content {
       grid-template-columns: repeat(3, 1fr);
       width: 400px;
@@ -72,8 +80,7 @@
       }
 
       .image-text {
-        width: 300px;
-        
+        width: 300px;       
       }
     }
 

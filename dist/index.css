@@ -622,6 +622,9 @@ a {
 .Skills-cards .show {
   display: block;
 }
+.Skills-cards:first-child .image-text {
+  display: block;
+}
 @media (max-width: 635px) {
   .Skills-content {
     grid-template-columns: repeat(3, 1fr);
