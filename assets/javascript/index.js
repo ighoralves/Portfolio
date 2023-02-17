@@ -1,5 +1,5 @@
 import "./textauto";
+import "./parallax";
 import "./Conf";
 import "./temaDark";
-// import "./verMais";
 import "./headerScroll";

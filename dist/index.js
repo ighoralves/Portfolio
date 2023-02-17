@@ -130,6 +130,11 @@ function typeWriter(elemento) {
 
 var textAuto = document.querySelector(".autotext");
 typeWriter(textAuto);
+},{}],"javascript/parallax.js":[function(require,module,exports) {
+window.addEventListener("scroll", function () {
+  var offset = window.pageYOffset;
+  document.body.style.backgroundPositionY = offset * 0.1 + "px";
+});
 },{}],"javascript/Conf.js":[function(require,module,exports) {
 var mobileMenu = document.querySelector(".DarkLight");
 var toggleButton = document.querySelector(".toggle");
@@ -180,12 +185,14 @@ window.onscroll = function () {
 
 require("./textauto");
 
+require("./parallax");
+
 require("./Conf");
 
 require("./temaDark");
 
 require("./headerScroll");
-},{"./textauto":"javascript/textauto.js","./Conf":"javascript/Conf.js","./temaDark":"javascript/temaDark.js","./headerScroll":"javascript/headerScroll.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./textauto":"javascript/textauto.js","./parallax":"javascript/parallax.js","./Conf":"javascript/Conf.js","./temaDark":"javascript/temaDark.js","./headerScroll":"javascript/headerScroll.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -291,7 +298,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63043" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49447" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

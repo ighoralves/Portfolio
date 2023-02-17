@@ -7,7 +7,7 @@
     left: 0px;
     display: flex;
     align-items: center;
-    height: 6rem;
+    height: 100px;
     width: 100vw;
     transition: background 0.45s ease 0s;
   }
@@ -18,7 +18,7 @@
     top: 0px;
     left: 0px;
     display: flex;
-    height: 6rem;
+    height: 100px;
     width: 100vw;
     background: rgba(0, 0, 0, 0.725);
     backdrop-filter: blur(4px);
@@ -89,5 +89,19 @@
       color: $--base-color;
     }
     cursor: pointer;
+  }
+
+  @media (max-width: 500px) {
+    #nav {
+      height: 70px;
+    }
+  
+    .scrolled {
+      height: 70px;
+    }
+
+    &-bts {
+      font-size: 22px;
+    }
   }
 }
