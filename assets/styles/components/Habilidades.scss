@@ -23,306 +23,67 @@
   }
 
   &-content {
-    max-width: 100%;
-    margin: 0 auto;
+    position: relative;
     display: grid;
     grid-template-columns: 
-    repeat(auto-fit, minmax(8rem, 1fr));
+    repeat(auto-fit, minmax(6rem, 1fr));
     gap: 20px;
   }
 
   &-cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 10px;
-    background: #fff;
+    padding: 10px;
+    background: #2F2E34;
     border-radius: 8px;
     opacity: .8;
     cursor: pointer;
 
     .image-div {
-      text-align: center;
+      width: 70%;
+      margin: 0 auto;
     }
 
     .image-text {
-      margin-top: 50px;
+      position: absolute;
+      top: calc(100% + 30px);
+      left: 50%;
+      transform: translateX(-50%);
       display: none;
       background: #2F2E34;
-      width: 500px;
+      max-width: 100%;
       padding: 20px;
       line-height: 140%;
       color: #fff;
       z-index: 5;
-    }
-
-    .textsline {
-      position: absolute;
-      // top: 0px;
-      left: 30%;
-    }
-
-    .textsline2 {
-      position: absolute;
-      // top: 0px;
-      left: 30%;
-    }
-
-    .textsline3 {
-      position: absolute;
-      // top: 0px;
-      left: 30%;
-    }
-
-    .textsline4 {
-      position: absolute;
-      // top: 0px;
-      left: 30%;
-    }
-    
-    .textsline5 {
-      position: absolute;
-      // top: 0px;
-      left: 30%;
-    }
-
-    .textsline6 {
-      position: absolute;
-      // top: 0px;
-      left: 30%;
-    }
-
+    } 
     .show {
       display: block;
     }
-  }
-    
-  
-
-  @media (max-width: 1250px) {
-    .textsline {
-      position: absolute;
-      // top: 0px;
-      left: 30%;
-    }
-
-    .textsline2 {
-      position: absolute;
-      // top: 0px;
-      left: 30%;
-    }
-
-    .textsline3 {
-      position: absolute;
-      // top: 0px;
-      left: 30%;
-    }
-
-    .textsline4 {
-      position: absolute;
-      // top: 0px;
-      left: 30%;
-    }
-
-    .textsline5 {
-      position: absolute;
-      // top: 0px;
-      left: 30%;
-    }
-
-    .textsline6 {
-      position: absolute;
-      // top: 0px;
-      left: 30%;
-    }
-  }
-
-  @media (max-width: 1130px) {
-    .textsline {
-      position: absolute;
-      // top: 0px;
-      left: 25%;
-    }
-
-    .textsline2 {
-      position: absolute;
-      // top: 0px;
-      left: 25%;
-    }
-
-    .textsline3 {
-      position: absolute;
-      // top: 0px;
-      left: 25%;
-    }
-
-    .textsline4 {
-      position: absolute;
-      // top: 0px;
-      left: 25%;
-    }
-
-    .textsline5 {
-      position: absolute;
-      // top: 0px;
-      left: 25%;
-    }
-
-    .textsline6 {
-      position: absolute;
-      // top: 0px;
-      left: 25%;
-    }
-  }
-
-
-
-  @media (max-width: 900px) {
-
-    .textsline {
-      position: absolute;
-      top: 85%;
-      left: 20%;
-    }
-
-    .textsline2 {
-      position: absolute;
-      top: 85%;
-      left: 20%;
-    }
-
-    .textsline3 {
-      position: absolute;
-      top: 85%;
-      left: 20%;
-    }
-
-    .textsline4 {
-      position: absolute;
-      top: 85%;
-      left: 20%;
-    }
-
-    .textsline5 {
-      position: absolute;
-      top: 85%;
-      left: 20%;
-    }
-
-    .textsline6 {
-      position: absolute;
-      top: 85%;
-      left: 20%;
-    }
-  }
-
-  @media (max-width: 780px) {
-    .image-text{
-      width: 400px;
-    }
-
-    .textsline {
-      position: absolute;
-      top: 85%;
-      left: 20%;
-      
-    }
-
-    .textsline2 {
-      position: absolute;
-      top: 85%;
-      left: 20%;
-    }
-
-    .textsline3 {
-      position: absolute;
-      top: 85%;
-      left: 20%;
-    }
-
-    .textsline4 {
-      position: absolute;
-      top: 85%;
-      left: 20%;
-    }
-
-    .textsline5 {
-      position: absolute;
-      top: 85%;
-      left: 20%;
-    }
-
-    .textsline6 {
-      position: absolute;
-      top: 85%;
-      left: 20%;
-    }
-  }
+  }   
 
   @media (max-width: 635px){
     &-content {
       grid-template-columns: repeat(3, 1fr);
       width: 400px;
       margin: 0 auto;
-    }
-
-    &-cards {
-      // opacity: 1;
-      width: 100px;
-      padding: 10px 0px;
 
       .image-div {
-        img {
-          width: 60%;
-        }
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .image-text {
+        width: 300px;
+        
       }
     }
 
-   
-
-    .textsline {
-      position: absolute;
-      top: 80%;
-      left: 11%;
-      
-    }
-
-    .textsline2 {
-      position: absolute;
-      top: 80%;
-      left: 11%;
-    }
-
-    .textsline3 {
-      position: absolute;
-      top: 80%;
-      left: 11%;
-    }
-
-    .textsline4 {
-      position: absolute;
-      top: 80%;
-      left: 11%;
-    }
-
-    .textsline5 {
-      position: absolute;
-      top: 80%;
-      left: 11%;
-    }
-
-    .textsline6 {
-      position: absolute;
-      top: 80%;
-      left: 11%;
-    }
 
   }
 
   @media (max-width: 550px) {
     &-content {
       grid-template-columns: repeat(3, 1fr);
-      width: 350px;
+      width: 320px;
       margin: 0 auto;
     }
 
@@ -338,100 +99,26 @@
     &-cards {
       opacity: 1;
       width: 70px;
-      padding:  10px 10px;
+      padding:  10px 5px;
     }
 
     .image-text {
-      width: 330px;
+      width: 200px;
       font-size: 14px;
     }
 
-    .textsline {
-      position: absolute;
-      top: 75%;
-      left: 14%;
-      
-    }
-
-    .textsline2 {
-      position: absolute;
-      top: 75%;
-      left: 14%;
-    }
-
-    .textsline3 {
-      position: absolute;
-      top: 75%;
-      left: 14%;
-    }
-
-    .textsline4 {
-      position: absolute;
-      top: 75%;
-      left: 14%;
-    }
-
-    .textsline5 {
-      position: absolute;
-      top: 75%;
-      left: 14%;
-    }
-
-    .textsline6 {
-      position: absolute;
-      top: 75%;
-      left: 15%;
-    }
   }
 
-  @media (max-width: 484px) {
+  @media (max-width: 350px) {
    &-content {
-    grid-template-columns: repeat(3, 1fr);
-    width: 300px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 180px;
     margin: 0 auto;
     }
 
    .image-text {
-    width: 250px;
     font-size: 12px;
     }
-
-    .textsline {
-      position: absolute;
-      top: 75%;
-      left: 17%;
-    }
-
-    .textsline2 {
-      position: absolute;
-      top: 75%;
-      left: 17%;
-    }
-
-    .textsline3 {
-      position: absolute;
-      top: 75%;
-      left: 17%;
-    }
-
-    .textsline4 {
-      position: absolute;
-      top: 75%;
-      left: 17%;
-    }
-
-    .textsline5 {
-      position: absolute;
-      top: 75%;
-      left: 17%;
-    }
-
-    .textsline6 {
-      position: absolute;
-      top: 75%;
-      left: 17%;
-    }
-
   }
 
 }

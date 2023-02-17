@@ -176,7 +176,7 @@ a {
 
 .Header #nav {
   position: fixed;
-  z-index: 5;
+  z-index: 999;
   top: 0px;
   left: 0px;
   display: flex;
@@ -200,6 +200,7 @@ a {
 .Header .flex {
   width: 100%;
   display: flex;
+  gap: 10px;
   align-items: center;
   justify-content: space-between;
 }
@@ -256,6 +257,8 @@ a {
   }
   .Header-bts {
     font-size: 22px;
+    margin-left: auto;
+    gap: 5px;
   }
 }
 
@@ -587,180 +590,37 @@ a {
   margin-bottom: 30px;
 }
 .Skills-content {
-  max-width: 100%;
-  margin: 0 auto;
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
   gap: 20px;
 }
 .Skills-cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 10px;
-  background: #fff;
+  padding: 10px;
+  background: #2F2E34;
   border-radius: 8px;
   opacity: 0.8;
   cursor: pointer;
 }
 .Skills-cards .image-div {
-  text-align: center;
+  width: 70%;
+  margin: 0 auto;
 }
 .Skills-cards .image-text {
-  margin-top: 50px;
+  position: absolute;
+  top: calc(100% + 30px);
+  left: 50%;
+  transform: translateX(-50%);
   display: none;
   background: #2F2E34;
-  width: 500px;
+  max-width: 100%;
   padding: 20px;
   line-height: 140%;
   color: #fff;
   z-index: 5;
 }
-.Skills-cards .textsline {
-  position: absolute;
-  left: 30%;
-}
-.Skills-cards .textsline2 {
-  position: absolute;
-  left: 30%;
-}
-.Skills-cards .textsline3 {
-  position: absolute;
-  left: 30%;
-}
-.Skills-cards .textsline4 {
-  position: absolute;
-  left: 30%;
-}
-.Skills-cards .textsline5 {
-  position: absolute;
-  left: 30%;
-}
-.Skills-cards .textsline6 {
-  position: absolute;
-  left: 30%;
-}
 .Skills-cards .show {
   display: block;
-}
-@media (max-width: 1250px) {
-  .Skills .textsline {
-    position: absolute;
-    left: 30%;
-  }
-  .Skills .textsline2 {
-    position: absolute;
-    left: 30%;
-  }
-  .Skills .textsline3 {
-    position: absolute;
-    left: 30%;
-  }
-  .Skills .textsline4 {
-    position: absolute;
-    left: 30%;
-  }
-  .Skills .textsline5 {
-    position: absolute;
-    left: 30%;
-  }
-  .Skills .textsline6 {
-    position: absolute;
-    left: 30%;
-  }
-}
-@media (max-width: 1130px) {
-  .Skills .textsline {
-    position: absolute;
-    left: 25%;
-  }
-  .Skills .textsline2 {
-    position: absolute;
-    left: 25%;
-  }
-  .Skills .textsline3 {
-    position: absolute;
-    left: 25%;
-  }
-  .Skills .textsline4 {
-    position: absolute;
-    left: 25%;
-  }
-  .Skills .textsline5 {
-    position: absolute;
-    left: 25%;
-  }
-  .Skills .textsline6 {
-    position: absolute;
-    left: 25%;
-  }
-}
-@media (max-width: 900px) {
-  .Skills .textsline {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-  }
-  .Skills .textsline2 {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-  }
-  .Skills .textsline3 {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-  }
-  .Skills .textsline4 {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-  }
-  .Skills .textsline5 {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-  }
-  .Skills .textsline6 {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-  }
-}
-@media (max-width: 780px) {
-  .Skills .image-text {
-    width: 400px;
-  }
-  .Skills .textsline {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-  }
-  .Skills .textsline2 {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-  }
-  .Skills .textsline3 {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-  }
-  .Skills .textsline4 {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-  }
-  .Skills .textsline5 {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-  }
-  .Skills .textsline6 {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-  }
 }
 @media (max-width: 635px) {
   .Skills-content {
@@ -768,48 +628,18 @@ a {
     width: 400px;
     margin: 0 auto;
   }
-  .Skills-cards {
-    width: 100px;
-    padding: 10px 0px;
+  .Skills-content .image-div {
+    width: 50%;
+    margin: 0 auto;
   }
-  .Skills-cards .image-div img {
-    width: 60%;
-  }
-  .Skills .textsline {
-    position: absolute;
-    top: 80%;
-    left: 11%;
-  }
-  .Skills .textsline2 {
-    position: absolute;
-    top: 80%;
-    left: 11%;
-  }
-  .Skills .textsline3 {
-    position: absolute;
-    top: 80%;
-    left: 11%;
-  }
-  .Skills .textsline4 {
-    position: absolute;
-    top: 80%;
-    left: 11%;
-  }
-  .Skills .textsline5 {
-    position: absolute;
-    top: 80%;
-    left: 11%;
-  }
-  .Skills .textsline6 {
-    position: absolute;
-    top: 80%;
-    left: 11%;
+  .Skills-content .image-text {
+    width: 300px;
   }
 }
 @media (max-width: 550px) {
   .Skills-content {
     grid-template-columns: repeat(3, 1fr);
-    width: 350px;
+    width: 320px;
     margin: 0 auto;
   }
   .Skills-title {
@@ -822,82 +652,21 @@ a {
   .Skills-cards {
     opacity: 1;
     width: 70px;
-    padding: 10px 10px;
+    padding: 10px 5px;
   }
   .Skills .image-text {
-    width: 330px;
+    width: 200px;
     font-size: 14px;
   }
-  .Skills .textsline {
-    position: absolute;
-    top: 75%;
-    left: 14%;
-  }
-  .Skills .textsline2 {
-    position: absolute;
-    top: 75%;
-    left: 14%;
-  }
-  .Skills .textsline3 {
-    position: absolute;
-    top: 75%;
-    left: 14%;
-  }
-  .Skills .textsline4 {
-    position: absolute;
-    top: 75%;
-    left: 14%;
-  }
-  .Skills .textsline5 {
-    position: absolute;
-    top: 75%;
-    left: 14%;
-  }
-  .Skills .textsline6 {
-    position: absolute;
-    top: 75%;
-    left: 15%;
-  }
 }
-@media (max-width: 484px) {
+@media (max-width: 350px) {
   .Skills-content {
-    grid-template-columns: repeat(3, 1fr);
-    width: 300px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 180px;
     margin: 0 auto;
   }
   .Skills .image-text {
-    width: 250px;
     font-size: 12px;
-  }
-  .Skills .textsline {
-    position: absolute;
-    top: 75%;
-    left: 17%;
-  }
-  .Skills .textsline2 {
-    position: absolute;
-    top: 75%;
-    left: 17%;
-  }
-  .Skills .textsline3 {
-    position: absolute;
-    top: 75%;
-    left: 17%;
-  }
-  .Skills .textsline4 {
-    position: absolute;
-    top: 75%;
-    left: 17%;
-  }
-  .Skills .textsline5 {
-    position: absolute;
-    top: 75%;
-    left: 17%;
-  }
-  .Skills .textsline6 {
-    position: absolute;
-    top: 75%;
-    left: 17%;
   }
 }
 
@@ -925,11 +694,10 @@ a {
 .Projects-card {
   display: flex;
   align-items: center;
+  gap: 30px;
   background: #2F2E34;
-  justify-content: space-between;
   padding: 30px;
   border-radius: 12px;
-  justify-content: space-between;
 }
 .Projects-card a {
   color: #fff;
@@ -960,8 +728,7 @@ a {
   font-size: 16px;
   background: rgb(135, 57, 250);
   border: none;
-  display: flex;
-  justify-content: space-between;
+  margin-left: auto;
 }
 @media (max-width: 750px) {
   .Projects-card {
@@ -973,6 +740,14 @@ a {
   }
   .Projects-text2 {
     width: 100%;
+  }
+  .Projects-btns1 {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgb(135, 57, 250);
+    border: none;
+    margin: auto;
   }
 }
 
