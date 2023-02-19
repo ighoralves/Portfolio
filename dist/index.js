@@ -174,17 +174,16 @@ imageDivs.forEach(function (div) {
     imgText.style.display = "block";
     activeText = imgText;
   });
-}); // function selecionarCard(event) {
-//   // remove a classe "selecionado" de todos os cards
-//   const cards = document.querySelectorAll(".card");
-//   cards.forEach((card) => card.classList.remove("selecionado"));
-//   // adiciona a classe "selecionado" apenas ao card clicado
-//   const cardSelecionado = event.currentTarget;
-//   cardSelecionado.classList.add("selecionado");
-// }
-// // adiciona um event listener para cada card
-// const cards = document.querySelectorAll(".card");
-// cards.forEach((card) => card.addEventListener("click", selecionarCard));
+});
+var cards = document.querySelectorAll(".Skills-cards");
+cards.forEach(function (card) {
+  card.addEventListener("click", function () {
+    cards.forEach(function (c) {
+      return c.classList.remove("active");
+    });
+    card.classList.add("active");
+  });
+});
 },{}],"javascript/temaDark.js":[function(require,module,exports) {
 var themeToggle = document.getElementById("chk");
 var body = document.body;
@@ -321,7 +320,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63854" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52409" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

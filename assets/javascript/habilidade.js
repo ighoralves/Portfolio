@@ -10,16 +10,11 @@ imageDivs.forEach(function (div) {
   });
 });
 
-// function selecionarCard(event) {
-//   // remove a classe "selecionado" de todos os cards
-//   const cards = document.querySelectorAll(".card");
-//   cards.forEach((card) => card.classList.remove("selecionado"));
+const cards = document.querySelectorAll(".Skills-cards");
 
-//   // adiciona a classe "selecionado" apenas ao card clicado
-//   const cardSelecionado = event.currentTarget;
-//   cardSelecionado.classList.add("selecionado");
-// }
-
-// // adiciona um event listener para cada card
-// const cards = document.querySelectorAll(".card");
-// cards.forEach((card) => card.addEventListener("click", selecionarCard));
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    cards.forEach((c) => c.classList.remove("active"));
+    card.classList.add("active");
+  });
+});

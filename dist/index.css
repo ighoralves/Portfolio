@@ -597,20 +597,16 @@ a {
 }
 .Skills-cards {
   padding: 10px;
-  background: #2F2E34;
   border-radius: 8px;
   opacity: 0.8;
   cursor: pointer;
   border-radius: 10px;
-  background: #2c2a2a;
+  background: #fff;
   box-shadow: 5px 5px 13px #181717, -5px -5px 13px #403d3d;
 }
 .Skills-cards .image-div {
   width: 70%;
   margin: 0 auto;
-}
-.Skills-cards .clicked {
-  background: blue;
 }
 .Skills-cards .image-text {
   position: absolute;
@@ -628,6 +624,9 @@ a {
 }
 .Skills-cards .image-text .show {
   display: block;
+}
+.Skills-cards:hover, .Skills-cards.active {
+  background-color: #8739FA;
 }
 .Skills-cards:first-child .image-text {
   display: block;
