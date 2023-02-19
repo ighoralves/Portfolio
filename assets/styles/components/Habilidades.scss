@@ -28,6 +28,7 @@
     grid-template-columns: 
     repeat(auto-fit, minmax(6rem, 1fr));
     gap: 20px;
+
   }
 
   &-cards {
@@ -36,12 +37,20 @@
     border-radius: 8px;
     opacity: .8;
     cursor: pointer;
-
+    border-radius: 10px;
+    background: #2c2a2a;
+    box-shadow:  5px 5px 13px #181717,
+             -5px -5px 13px #403d3d;;
 
     .image-div {
       width: 70%;
       margin: 0 auto;
     }
+
+    .clicked {
+      background: blue;
+    }
+
 
     .image-text {
       position: absolute;
@@ -49,17 +58,20 @@
       left: 50%;
       transform: translateX(-50%);
       display: none;
-      background: #2F2E34;
+      background: #403d3d;;
+      border-radius: 10px;
       max-width: 100%;
       padding: 20px;
       line-height: 140%;
       color: #fff;
       z-index: 5;
+
+      .show {
+        display: block;
+      }
     } 
 
-    .show {
-      display: block;
-    }
+    
 
     &:first-child {
       .image-text {

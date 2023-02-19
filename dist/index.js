@@ -165,16 +165,26 @@ function toggleLogo() {
 window.addEventListener("resize", toggleLogo);
 toggleLogo();
 },{}],"javascript/habilidade.js":[function(require,module,exports) {
-var imageDivs = document.querySelectorAll(".image-div");
+var imageDivs = document.querySelectorAll(".Skills-cards");
+var activeText = imageDivs[0].querySelector(".image-text");
 imageDivs.forEach(function (div) {
   var imgText = div.querySelector(".image-text");
   div.addEventListener("click", function () {
+    activeText.style.display = "none";
     imgText.style.display = "block";
+    activeText = imgText;
   });
-  div.addEventListener("toggle", function () {
-    imgText.style.display = "none";
-  });
-});
+}); // function selecionarCard(event) {
+//   // remove a classe "selecionado" de todos os cards
+//   const cards = document.querySelectorAll(".card");
+//   cards.forEach((card) => card.classList.remove("selecionado"));
+//   // adiciona a classe "selecionado" apenas ao card clicado
+//   const cardSelecionado = event.currentTarget;
+//   cardSelecionado.classList.add("selecionado");
+// }
+// // adiciona um event listener para cada card
+// const cards = document.querySelectorAll(".card");
+// cards.forEach((card) => card.addEventListener("click", selecionarCard));
 },{}],"javascript/temaDark.js":[function(require,module,exports) {
 var themeToggle = document.getElementById("chk");
 var body = document.body;
@@ -311,7 +321,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52814" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63854" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
