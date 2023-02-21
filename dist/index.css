@@ -681,8 +681,8 @@ a {
 
 .Projects {
   position: relative;
-  top: 100px;
-  padding-top: 250px;
+  top: 150px;
+  padding: 250px 0px;
 }
 .Projects-title {
   text-align: center;
