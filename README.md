@@ -17,9 +17,9 @@
 
 <br>
 
-<!-- <p align="center">
+<p align="center">
   <img alt="projeto Portfolio" src=".github/preview.jpg" width="100%">
-</p> -->
+</p>
 
 ## 🚀 Tecnologias
 
@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Visite o projeto online](https://ighoralves.github.io/Portfolio/)
 
-## 🔖 Layout
+<!-- ## 🔖 Layout -->
 
 ## :memo: Licença
 
