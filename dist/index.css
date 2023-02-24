@@ -424,7 +424,6 @@ a {
 @media (max-width: 500px) {
   .Home-text {
     text-align: center;
-    max-width: 350px;
   }
   .Home-image {
     background: rgb(135, 57, 250);
@@ -643,7 +642,6 @@ a {
 @media (max-width: 635px) {
   .Skills-content {
     grid-template-columns: repeat(3, 1fr);
-    width: 400px;
     margin: 0 auto;
   }
   .Skills-content .image-div {
@@ -651,7 +649,7 @@ a {
     margin: 0 auto;
   }
   .Skills-content .image-text {
-    width: 300px;
+    width: 100%;
   }
 }
 @media (max-width: 550px) {
@@ -673,7 +671,7 @@ a {
     padding: 10px 5px;
   }
   .Skills .image-text {
-    width: 200px;
+    width: 100%;
     font-size: 14px;
   }
 }
@@ -685,6 +683,7 @@ a {
   }
   .Skills .image-text {
     font-size: 12px;
+    width: 100%;
   }
 }
 
@@ -805,6 +804,36 @@ a {
   }
   .Footer .icon2 {
     width: 15px;
+  }
+}
+
+.back-to-top {
+  background: rgb(135, 57, 250);
+  color: #fff;
+  position: fixed;
+  right: 5px;
+  bottom: 100px;
+  padding: 10px;
+  clip-path: circle();
+  font-size: 28px;
+  line-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(100%);
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 10;
+}
+
+@media (max-width: 500px) {
+  .back-to-top {
+    padding: 3px;
+    font-size: 22px;
   }
 }
 

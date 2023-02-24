@@ -4,3 +4,4 @@ import "./Conf";
 import "./habilidade";
 import "./temaDark";
 import "./headerScroll";
+import "./BackToTop";

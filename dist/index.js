@@ -200,6 +200,20 @@ window.onscroll = function () {
     menu.classList.remove("scrolled");
   }
 };
+},{}],"javascript/BackToTop.js":[function(require,module,exports) {
+var backToTopButton = document.querySelector(".back-to-top");
+
+function backToTop() {
+  if (window.scrollY >= 560) {
+    backToTopButton.classList.add("show");
+  } else {
+    backToTopButton.classList.remove("show");
+  }
+}
+
+window.addEventListener("scroll", function () {
+  backToTop();
+});
 },{}],"javascript/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -214,7 +228,9 @@ require("./habilidade");
 require("./temaDark");
 
 require("./headerScroll");
-},{"./textauto":"javascript/textauto.js","./parallax":"javascript/parallax.js","./Conf":"javascript/Conf.js","./habilidade":"javascript/habilidade.js","./temaDark":"javascript/temaDark.js","./headerScroll":"javascript/headerScroll.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+
+require("./BackToTop");
+},{"./textauto":"javascript/textauto.js","./parallax":"javascript/parallax.js","./Conf":"javascript/Conf.js","./habilidade":"javascript/habilidade.js","./temaDark":"javascript/temaDark.js","./headerScroll":"javascript/headerScroll.js","./BackToTop":"javascript/BackToTop.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -320,7 +336,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61357" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53096" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

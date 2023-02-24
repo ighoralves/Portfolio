@@ -1,0 +1,35 @@
+.back-to-top {
+  background: $--base-color;
+  color: #fff;
+
+  position: fixed;
+  right: 5px;
+  bottom: 100px;
+
+  padding: 10px;
+  clip-path: circle();
+
+  font-size: 28px;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s;
+  transform: translateY(100%);
+
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 10;
+}
+
+@media (max-width: 500px) {
+  .back-to-top {
+    padding: 3px;
+    font-size: 22px; 
+  }
+}
