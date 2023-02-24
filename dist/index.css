@@ -516,12 +516,18 @@ a {
 .About-content {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 50px;
 }
-.About-content figure {
+.About-image {
   background: rgb(135, 57, 250);
-  width: 30%;
-  border-radius: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.About-image img {
+  filter: brightness(120%);
+  outline: 2px solid #000;
+  outline-offset: -2px;
 }
 .About-texts {
   max-width: 630px;
@@ -540,6 +546,9 @@ a {
   .About-texts .Text1 {
     font-size: 26px;
   }
+  .About-image {
+    width: 40%;
+  }
 }
 @media (max-width: 800px) {
   .About-content {
@@ -555,7 +564,7 @@ a {
     flex-direction: column;
     text-align: center;
   }
-  .About figure {
+  .About-image {
     width: 40%;
   }
   .About-texts {
