@@ -811,7 +811,7 @@ a {
   background: rgb(135, 57, 250);
   color: #fff;
   position: fixed;
-  right: 5px;
+  right: 6px;
   bottom: 100px;
   padding: 10px;
   clip-path: circle();
